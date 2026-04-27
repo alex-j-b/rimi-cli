@@ -35,25 +35,11 @@ Install from the GitHub repository:
 uv tool install rimi --from git+https://github.com/alex-j-b/rimi-cli.git
 ```
 
-## Auth Headers
+## Authentication
 
-Account-specific commands need your own authenticated Rimi browser session headers. Store them in your system keyring:
+Authenticated commands use a secure local session on your computer. For the operational details, see `AGENTS.md`.
 
-```bash
-rimi auth store-headers --file rimi-network-headers.json
-```
-
-You can also pipe the JSON through stdin:
-
-```bash
-printf '%s\n' '<playwright headers json>' | rimi auth store-headers
-```
-
-The JSON must be an object with a `headers` object, matching the shape returned by Playwright's `request.allHeaders()`. The CLI stores this payload in the system keyring under service `rimi`, account `playwright-headers-json`, and only merges session-sensitive headers at runtime, such as `cookie`, `authorization`, CSRF/XSRF token headers, `x-requested-with`, and header names containing `auth`, `csrf`, `session`, or `token`.
-
-For manual or CI runs, `PLAYWRIGHT_HEADERS_JSON` remains available as a process environment override. Do not put live cookies or tokens in shell history.
-
-If you use this CLI with an AI coding agent, ask the agent to refresh the keyring item from an authenticated browser session without printing cookies or tokens in the chat.
+AI coding agents working with the CLI can capture and persist authenticated browser sessions securely on the local machine without exposing credentials in chat.
 
 ## Usage
 
