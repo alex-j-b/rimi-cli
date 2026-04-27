@@ -32,7 +32,7 @@ This project is not an official Rimi client. It sends HTTP requests to Rimi's pu
 Install from the GitHub repository:
 
 ```bash
-uv tool install rimi --from git+https://github.com/<owner>/<repo>.git
+uv tool install rimi --from git+https://github.com/alex-j-b/rimi-cli.git
 ```
 
 ## Environment
