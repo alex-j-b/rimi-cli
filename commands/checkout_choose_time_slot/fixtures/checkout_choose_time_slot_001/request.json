@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "url": "https://www.rimi.ee/epood/en/checkout/delivery/collect/time-slots/choose",
+  "path": "/epood/en/checkout/delivery/collect/time-slots/choose",
+  "query": {},
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "content-type": "application/x-www-form-urlencoded",
+    "origin": "https://www.rimi.ee",
+    "referer": "https://www.rimi.ee/epood/en/checkout/delivery/collect/time-slots"
+  }
+}

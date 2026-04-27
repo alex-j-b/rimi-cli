@@ -1,0 +1,1155 @@
+{
+  "count": 50,
+  "products": [
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.24,
+        "step": 0.24,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-2-13",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "269167",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_269167_KGM_EE",
+      "name": "Paprika punane 1kl, kg",
+      "price": 0.72,
+      "price_label": "2.99 € per kg",
+      "unit_price": {
+        "amount": 2.99,
+        "formatted": "2,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/bell-peppers-and-pepper/paprika-punane-1kl-kg/p/269167"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-7-29",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "812416",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_812416_PCE_EE",
+      "name": "Kanamunad Rimi Smart M 10tk",
+      "price": 1.79,
+      "price_label": "1.79 € per pcs.",
+      "unit_price": {
+        "amount": 0.18,
+        "formatted": "0,18 €/pcs.",
+        "unit": "pcs."
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/eggs/chicken-eggs/kanamunad-rimi-smart-m-10tk/p/812416"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-5-22",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "811231",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_811231_PCE_EE",
+      "name": "Hapukoor Rimi 20% 500g",
+      "price": 1.49,
+      "price_label": "1.49 € per pcs.",
+      "unit_price": {
+        "amount": 2.98,
+        "formatted": "2,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/creams/sour-cream/hapukoor-rimi-20-500g/p/811231"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.6,
+        "step": 0.6,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-29",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "298039",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_298039_KGM_EE",
+      "name": "Apelsin Lane Late 1kl, kg Rimi",
+      "price": 0.89,
+      "price_label": "1.49 € per kg",
+      "unit_price": {
+        "amount": 1.49,
+        "formatted": "1,49 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/citrus-fruits/apelsin-lane-late-1kl-kg-rimi/p/298039"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-5-28",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "283380",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_283380_PCE_EE",
+      "name": "Kiivi Gold pakitud 2kl, 500g",
+      "price": 2.49,
+      "price_label": "2.49 € per pcs.",
+      "unit_price": {
+        "amount": 4.98,
+        "formatted": "4,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/tropical-fruits/kiivi-gold-pakitud-2kl-500g/p/283380"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-2-11",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "916557",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_916557_PCE_EE",
+      "name": "Kurk mahe Rimi Eco 300g",
+      "price": 1.99,
+      "price_label": "1.99 € per pcs.",
+      "unit_price": {
+        "amount": 6.63,
+        "formatted": "6,63 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/cucumber/kurk-mahe-rimi-eco-300g/p/916557"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.25,
+        "step": 0.25,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-2-11",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "275290",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_275290_KGM_EE",
+      "name": "Kurk Luunja kg",
+      "price": 1.5,
+      "price_label": "5.99 € per kg",
+      "unit_price": {
+        "amount": 5.99,
+        "formatted": "5,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/cucumber/kurk-luunja-kg/p/275290"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 5,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-2-14",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "296781",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_296781_PCE_EE",
+      "name": "Ploomtomat punane mini 1kl, 250g",
+      "price": 2.59,
+      "price_label": "2.59 € per pcs.",
+      "unit_price": {
+        "amount": 10.36,
+        "formatted": "10,36 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/tomatoes/ploomtomat-punane-mini-1kl-250g/p/296781"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-1-1",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "276041",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_276041_KGM_EE",
+      "name": "Kartul punane pestud, kg Eesti",
+      "price": 0.99,
+      "price_label": "0.99 € per kg",
+      "unit_price": {
+        "amount": 0.99,
+        "formatted": "0,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/potatoes/kartul-punane-pestud-kg-eesti/p/276041"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-1-25",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "905516",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_905516_PCE_EE",
+      "name": "Avokaado pakitud Rimi 750g",
+      "price": 3.99,
+      "price_label": "3.99 € per pcs.",
+      "unit_price": {
+        "amount": 5.32,
+        "formatted": "5,32 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/avocado/avokaado-pakitud-rimi-750g/p/905516"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.7,
+        "step": 0.7,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-1-1",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "286441",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_286441_KGM_EE",
+      "name": "Bataat kg",
+      "price": 2.09,
+      "price_label": "2.99 € per kg",
+      "unit_price": {
+        "amount": 2.99,
+        "formatted": "2,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/potatoes/bataat-kg/p/286441"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.6,
+        "step": 0.6,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-29",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "211196",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_211196_KGM_EE",
+      "name": "Apelsin Navel 1kl, kg",
+      "price": 1.19,
+      "price_label": "1.99 € per kg",
+      "unit_price": {
+        "amount": 1.99,
+        "formatted": "1,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/citrus-fruits/apelsin-navel-1kl-kg/p/211196"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-2-8",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "917033",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_917033_PCE_EE",
+      "name": "Kreeka jogurt maitsestamata Alma 370g",
+      "price": 1.69,
+      "price_label": "1.69 € per pcs.",
+      "unit_price": {
+        "amount": 4.57,
+        "formatted": "4,57 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/yoghurts-and-desserts/unflavoured-yoghurts/kreeka-jogurt-maitsestamata-alma-370g/p/917033"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-6",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "947057",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_947057_PCE_EE",
+      "name": "Beebispinat VEG 1kl, 100gr",
+      "price": 0.99,
+      "price_label": "0.99 € per pcs.",
+      "unit_price": {
+        "amount": 9.9,
+        "formatted": "9,90 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/green-salads/beebispinat-veg-1kl-100gr/p/947057"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-8-2-3",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "903869",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_903869_PCE_EE",
+      "name": "Broileririnnafilee hakkliha Fit 300g",
+      "price": 2.89,
+      "price_label": "2.89 € per pcs.",
+      "unit_price": {
+        "amount": 9.63,
+        "formatted": "9,63 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/meat-and-fish-products/minced-meat/minced-chicken/broileririnnafilee-hakkliha-fit-300g/p/903869"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.3,
+        "step": 0.3,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-1-6",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "211266",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_211266_KGM_EE",
+      "name": "Punane sibul kg",
+      "price": 0.45,
+      "price_label": "1.49 € per kg",
+      "unit_price": {
+        "amount": 1.49,
+        "formatted": "1,49 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/onions-leeks-garlic/punane-sibul-kg/p/211266"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-27",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "269153",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_269153_KGM_EE",
+      "name": "Õun Royal Gala, 1kl kg",
+      "price": 2.49,
+      "price_label": "2.49 € per kg",
+      "unit_price": {
+        "amount": 2.49,
+        "formatted": "2,49 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/apples-pears/oun-royal-gala-1kl-kg/p/269153"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 5,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-2-14",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "277348",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_277348_PCE_EE",
+      "name": "Kokteilkobartomat 1kl, 500g",
+      "price": 4.49,
+      "price_label": "4.49 € per pcs.",
+      "unit_price": {
+        "amount": 8.98,
+        "formatted": "8,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/tomatoes/kokteilkobartomat-1kl-500g/p/277348"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-29",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "211248",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_211248_KGM_EE",
+      "name": "Mandariin Murcott 1kl, kg",
+      "price": 1.99,
+      "price_label": "1.99 € per kg",
+      "unit_price": {
+        "amount": 1.99,
+        "formatted": "1,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/citrus-fruits/mandariin-murcott-1kl-kg/p/211248"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-27",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "297319",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_297319_KGM_EE",
+      "name": "Pirn Conference 1kl, kg Rimi",
+      "price": 2.49,
+      "price_label": "2.49 € per kg",
+      "unit_price": {
+        "amount": 2.49,
+        "formatted": "2,49 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/apples-pears/pirn-conference-1kl-kg-rimi/p/297319"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-5-24",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "962520",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_962520_PCE_EE",
+      "name": "Köögikoor Farmi 15% 400ml",
+      "price": 1.39,
+      "price_label": "1.39 € per pcs.",
+      "unit_price": {
+        "amount": 3.47,
+        "formatted": "3,47 €/l",
+        "unit": "l"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/creams/creams/koogikoor-farmi-15-400ml/p/962520"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1.05,
+        "step": 1.05,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-27",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "281840",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_281840_KGM_EE",
+      "name": "Õun Kanzi 1kl, kg",
+      "price": 3.98,
+      "price_label": "3.79 € per kg",
+      "unit_price": {
+        "amount": 3.79,
+        "formatted": "3,79 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/apples-pears/oun-kanzi-1kl-kg/p/281840"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-8-37",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "925074",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_925074_PCE_EE",
+      "name": "Täispiim Farmi 3,8-4,2% 2l",
+      "price": 2.29,
+      "price_label": "2.29 € per pcs.",
+      "unit_price": {
+        "amount": 1.15,
+        "formatted": "1,15 €/l",
+        "unit": "l"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/milk/milk/taispiim-farmi-3-8-4-2-2l/p/925074"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-8-2-5",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "919750",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_919750_PCE_EE",
+      "name": "Kodune hakkliha M&M 500g",
+      "price": 3.95,
+      "price_label": "3.95 € per pcs.",
+      "unit_price": {
+        "amount": 7.9,
+        "formatted": "7,90 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/meat-and-fish-products/minced-meat/mixed-minced-meat/kodune-hakkliha-m-m-500g/p/919750"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-8-37",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "952490",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_952490_PCE_EE",
+      "name": "Piim laktoosivaba Tere 2,5% 1l",
+      "price": 1.65,
+      "price_label": "1.65 € per pcs.",
+      "unit_price": {
+        "amount": 1.65,
+        "formatted": "1,65 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/milk/milk/piim-laktoosivaba-tere-2-5-1l/p/952490"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-7-29",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "970975",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_970975_PCE_EE",
+      "name": "Õrrekanade munad Kodutalu M10",
+      "price": 2.65,
+      "price_label": "2.65 € per pcs.",
+      "unit_price": {
+        "amount": 0.27,
+        "formatted": "0,27 €/pcs.",
+        "unit": "pcs."
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/eggs/chicken-eggs/orrekanade-munad-kodutalu-m10/p/970975"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-1-25",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "814808",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_814808_PCE_EE",
+      "name": "Avokaado söömisküps Rimi 4tk 500g",
+      "price": 3.99,
+      "price_label": "3.99 € per pcs.",
+      "unit_price": {
+        "amount": 7.98,
+        "formatted": "7,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/avocado/avokaado-soomiskups-rimi-4tk-500g/p/814808"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-3-10",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "805802",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_805802_PCE_EE",
+      "name": "Juust Mozzarella Rimi 45% 125g",
+      "price": 1.39,
+      "price_label": "1.39 € per pcs.",
+      "unit_price": {
+        "amount": 11.12,
+        "formatted": "11,12 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/cheese/feta-and-mozzarella-cheese/juust-mozzarella-rimi-45-125g/p/805802"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-8-2-5",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "901246",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_901246_PCE_EE",
+      "name": "Delikatesshakkliha M&M 300g",
+      "price": 3.99,
+      "price_label": "3.99 € per pcs.",
+      "unit_price": {
+        "amount": 13.3,
+        "formatted": "13,30 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/meat-and-fish-products/minced-meat/mixed-minced-meat/delikatesshakkliha-m-m-300g/p/901246"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 2,
+        "step": 2,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-2-8",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "283755",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_283755_KGM_EE",
+      "name": "Kapsas varajane",
+      "price": 3.98,
+      "price_label": "1.99 € per kg",
+      "unit_price": {
+        "amount": 1.99,
+        "formatted": "1,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/cabbage/kapsas-varajane/p/283755"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-24",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "814805",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_814805_KGM_EE",
+      "name": "Banaanid Cavendish I Love Eco 1kl, kg",
+      "price": 1.69,
+      "price_label": "1.69 € per kg",
+      "unit_price": {
+        "amount": 1.69,
+        "formatted": "1,69 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/bananas/banaanid-cavendish-i-love-eco-1kl-kg/p/814805"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-5-24",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "205760",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_205760_PCE_EE",
+      "name": "Vahukoor Alma 35% 400ml",
+      "price": 2.85,
+      "price_label": "2.85 € per pcs.",
+      "unit_price": {
+        "amount": 7.12,
+        "formatted": "7,12 €/l",
+        "unit": "l"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/creams/creams/vahukoor-alma-35-400ml/p/205760"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-6-7-21",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "274018",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_274018_PCE_EE",
+      "name": "Röstsai Tosta Eesti Pagar 500g",
+      "price": 1.09,
+      "price_label": "1.09 € per pcs.",
+      "unit_price": {
+        "amount": 2.18,
+        "formatted": "2,18 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/bread/toast/rostsai-tosta-eesti-pagar-500g/p/274018"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-9",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "944264",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_944264_PCE_EE",
+      "name": "Keedetud peet 400g",
+      "price": 0.69,
+      "price_label": "0.69 € per pcs.",
+      "unit_price": {
+        "amount": 1.72,
+        "formatted": "1,72 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/processed-fruits-and-vegetables/keedetud-peet-400g/p/944264"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1.6,
+        "step": 1.6,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-5-27",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "219161",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_219161_KGM_EE",
+      "name": "Õun Gala Must võrgus 1kl, kg",
+      "price": 1.9,
+      "price_label": "1.19 € per kg",
+      "unit_price": {
+        "amount": 1.19,
+        "formatted": "1,19 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/fruits/apples-pears/oun-gala-must-vorgus-1kl-kg/p/219161"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 0.7,
+        "step": 0.7,
+        "unit": "kg"
+      },
+      "category_id": "SH-12-2-10",
+      "currency": "EUR",
+      "favorite": true,
+      "id": "269171",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_269171_KGM_EE",
+      "name": "Suvikõrvits roheline kg",
+      "price": 2.79,
+      "price_label": "3.99 € per kg",
+      "unit_price": {
+        "amount": 3.99,
+        "formatted": "3,99 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/pumpkin-zucchini/suvikorvits-roheline-kg/p/269171"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-3-15",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "200316",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_200316_PCE_EE",
+      "name": "Sulatatud juust Merevaik 200g",
+      "price": 1.59,
+      "price_label": "1.59 € per pcs.",
+      "unit_price": {
+        "amount": 7.95,
+        "formatted": "7,95 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/cheese/spread-cheese/sulatatud-juust-merevaik-200g/p/200316"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-4-20",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "204961",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_204961_PCE_EE",
+      "name": "Kodujuust Alma 5% 200g",
+      "price": 1.35,
+      "price_label": "1.35 € per pcs.",
+      "unit_price": {
+        "amount": 6.75,
+        "formatted": "6,75 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/curds-cottage-cheese/cottage-cheese/kodujuust-alma-5-200g/p/204961"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-9",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "944265",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_944265_PCE_EE",
+      "name": "Keedetud riivitud peet 350g",
+      "price": 0.99,
+      "price_label": "0.99 € per pcs.",
+      "unit_price": {
+        "amount": 2.83,
+        "formatted": "2,83 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/processed-fruits-and-vegetables/keedetud-riivitud-peet-350g/p/944265"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-8-2-1",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "814144",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_814144_PCE_EE",
+      "name": "Veisehakkliha Rimi 400g",
+      "price": 3.99,
+      "price_label": "3.99 € per pcs.",
+      "unit_price": {
+        "amount": 9.97,
+        "formatted": "9,97 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/meat-and-fish-products/minced-meat/minced-beef/veisehakkliha-rimi-400g/p/814144"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-13-6-31",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "103170",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_103170_PCE_EE",
+      "name": "Tomatipasta Pomi 200g",
+      "price": 1.09,
+      "price_label": "1.09 € per pcs.",
+      "unit_price": {
+        "amount": 5.45,
+        "formatted": "5,45 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/groceries/sauces-ketchups-mustard-and-horseradish/tomato-sauces-and-pastas/tomatipasta-pomi-200g/p/103170"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-5-22",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "200279",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_200279_PCE_EE",
+      "name": "Hapukoor Alma 20% 500g",
+      "price": 1.99,
+      "price_label": "1.99 € per pcs.",
+      "unit_price": {
+        "amount": 3.98,
+        "formatted": "3,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/creams/sour-cream/hapukoor-alma-20-500g/p/200279"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-5-24",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "913701",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_913701_PCE_EE",
+      "name": "Toidukoor Alma 20% 400ml",
+      "price": 1.99,
+      "price_label": "1.99 € per pcs.",
+      "unit_price": {
+        "amount": 4.97,
+        "formatted": "4,97 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/creams/creams/toidukoor-alma-20-400ml/p/913701"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-6",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "947058",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_947058_PCE_EE",
+      "name": "Rukola VEG 1kl, 100g",
+      "price": 1.49,
+      "price_label": "1.49 € per pcs.",
+      "unit_price": {
+        "amount": 14.9,
+        "formatted": "14,90 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/green-salads/rukola-veg-1kl-100g/p/947058"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-4-3-15",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "811670",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_811670_PCE_EE",
+      "name": "Külmutatud maasikad Rimi 400g",
+      "price": 2.79,
+      "price_label": "2.79 € per pcs.",
+      "unit_price": {
+        "amount": 6.97,
+        "formatted": "6,97 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/frozen-foods/frozen-vegetables-berries/frozen-berries/kulmutatud-maasikad-rimi-400g/p/811670"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-4-3-15",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "811169",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_811169_PCE_EE",
+      "name": "Kultuurmustikad külmutatud Rimi 400g",
+      "price": 4.79,
+      "price_label": "4.79 € per pcs.",
+      "unit_price": {
+        "amount": 11.97,
+        "formatted": "11,97 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/frozen-foods/frozen-vegetables-berries/frozen-berries/kultuurmustikad-kulmutatud-rimi-400g/p/811169"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-2-13",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "900263",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_900263_PCE_EE",
+      "name": "Paprika magus Rimi 1kl, 250g",
+      "price": 2.99,
+      "price_label": "2.99 € per pcs.",
+      "unit_price": {
+        "amount": 11.96,
+        "formatted": "11,96 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/vegetables/bell-peppers-and-pepper/paprika-magus-rimi-1kl-250g/p/900263"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-1",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "201841",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_201841_PCE_EE",
+      "name": "Keefir Hellus pure 1kg",
+      "price": 1.49,
+      "price_label": "1.49 € per pcs.",
+      "unit_price": {
+        "amount": 1.49,
+        "formatted": "1,49 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/sour-milk-and-kefir/keefir-hellus-pure-1kg/p/201841"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-12-7",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "297915",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_297915_PCE_EE",
+      "name": "Šampinjonid Rimi 250g",
+      "price": 1.49,
+      "price_label": "1.49 € per pcs.",
+      "unit_price": {
+        "amount": 5.96,
+        "formatted": "5,96 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/fruits-vegetables-flowers/mushrooms/sampinjonid-rimi-250g/p/297915"
+    },
+    {
+      "brand": null,
+      "cart": {
+        "max_quantity": 100,
+        "quantity": 1,
+        "step": 1,
+        "unit": "Piece"
+      },
+      "category_id": "SH-11-2-8",
+      "currency": "EUR",
+      "favorite": false,
+      "id": "952654",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_952654_PCE_EE",
+      "name": "Kreeka jogurt maitsestamata Tere 350g",
+      "price": 1.65,
+      "price_label": "1.65 € per pcs.",
+      "unit_price": {
+        "amount": 4.71,
+        "formatted": "4,71 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/dairy-products-eggs-cheese/yoghurts-and-desserts/unflavoured-yoghurts/kreeka-jogurt-maitsestamata-tere-350g/p/952654"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+version: 1
+command:
+  id: products_list
+  cli_path:
+  - products
+  - list
+  summary: List products in a category
+  complete: true
+  description: Return product cards for a Rimi category.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3
+    path_template: /epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: products
+    - kind: literal
+      value: bread-pastry-confectionery
+    - kind: literal
+      value: rimi-bakeries
+    - kind: literal
+      value: fresh-breads-buns
+    - kind: literal
+      value: c
+    - kind: literal
+      value: SH-6-6-3
+    params: {}
+    query: {}
+    headers:
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/tume-itaalia-leib-ciabatta-330g/p/209109
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        query:
+          type: string
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: products_list_001
+    path: fixtures/products_list_001
+  goldens:
+  - id: products_list_001
+    path: goldens/products_list_001.json
+  arguments:
+  - name: category-id
+    python_name: category_id
+    kind: option
+    type: string
+    required: false
+    default: SH-6-6-3
+    help: Rimi category id, for example SH-6-6-3.
+  - name: page
+    python_name: page
+    kind: option
+    type: integer
+    required: false
+    default: 1
+    help: Result page number.
+  - name: page-size
+    python_name: page_size
+    kind: option
+    type: integer
+    required: false
+    default: 80
+    help: Number of products per page.
+    choices:
+    - 20
+    - 40
+    - 60
+    - 80
+  - name: sort
+    python_name: sort
+    kind: option
+    type: string
+    required: false
+    default: priceunit-desc
+    choices:
+    - relevance
+    - price-desc
+    - price-asc
+    - priceunit-desc
+    - priceunit-asc
+    help: Product sort order.
+  request_mapping:
+    request.query.currentPage: args.page
+    request.query.pageSize: args.page_size

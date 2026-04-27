@@ -1,0 +1,65 @@
+version: 1
+command:
+  id: favorites_categories
+  cli_path:
+  - favorites
+  - categories
+  summary: List favorite product categories
+  complete: true
+  description: Return categories that contain favorite products.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/my-profile/favourites/personal-products/categories
+    path_template: /epood/en/my-profile/favourites/personal-products/categories
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: my-profile
+    - kind: literal
+      value: favourites
+    - kind: literal
+      value: personal-products
+    - kind: literal
+      value: categories
+    params: {}
+    query: {}
+    headers:
+      accept: '*/*'
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/my-profile/favourites
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        suggested:
+          type: integer
+        favorites:
+          type: integer
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: favorites_categories_001
+    path: fixtures/favorites_categories_001
+  goldens:
+  - id: favorites_categories_001
+    path: goldens/favorites_categories_001.json
+  request_mapping:
+    request.query.favorites: 1
+    request.query.suggested: 0

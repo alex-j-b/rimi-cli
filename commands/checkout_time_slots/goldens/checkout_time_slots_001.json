@@ -1,0 +1,238 @@
+{
+  "available_count": 0,
+  "count": 13,
+  "date_options": [
+    {
+      "date": "2026-04-11",
+      "display": "Apr. 11.",
+      "label": "Today",
+      "offset": "D+0",
+      "selected": true
+    },
+    {
+      "date": "2026-04-12",
+      "display": "Apr. 12.",
+      "label": "Tomorrow",
+      "offset": "D+1",
+      "selected": false
+    },
+    {
+      "date": "2026-04-13",
+      "display": "Apr. 13.",
+      "label": "Monday",
+      "offset": "D+2",
+      "selected": false
+    },
+    {
+      "date": "2026-04-14",
+      "display": "Apr. 14.",
+      "label": "Tuesday",
+      "offset": "D+3",
+      "selected": false
+    },
+    {
+      "date": "2026-04-15",
+      "display": "Apr. 15.",
+      "label": "Wednesday",
+      "offset": "D+4",
+      "selected": false
+    },
+    {
+      "date": "2026-04-16",
+      "display": "Apr. 16.",
+      "label": "Thursday",
+      "offset": "D+5",
+      "selected": false
+    },
+    {
+      "date": "2026-04-17",
+      "display": "Apr. 17.",
+      "label": "Friday",
+      "offset": "D+6",
+      "selected": false
+    },
+    {
+      "date": "2026-04-18",
+      "display": "Apr. 18.",
+      "label": "Saturday",
+      "offset": "D+7",
+      "selected": false
+    },
+    {
+      "date": "2026-04-19",
+      "display": "Apr. 19.",
+      "label": "Sunday",
+      "offset": "D+8",
+      "selected": false
+    },
+    {
+      "date": "2026-04-20",
+      "display": "Apr. 20.",
+      "label": "Monday",
+      "offset": "D+9",
+      "selected": false
+    },
+    {
+      "date": "2026-04-21",
+      "display": "Apr. 21.",
+      "label": "Tuesday",
+      "offset": "D+10",
+      "selected": false
+    },
+    {
+      "date": "2026-04-22",
+      "display": "Apr. 22.",
+      "label": "Wednesday",
+      "offset": "D+11",
+      "selected": false
+    },
+    {
+      "date": "2026-04-23",
+      "display": "Apr. 23.",
+      "label": "Thursday",
+      "offset": "D+12",
+      "selected": false
+    },
+    {
+      "date": "2026-04-24",
+      "display": "Apr. 24.",
+      "label": "Friday",
+      "offset": "D+13",
+      "selected": false
+    }
+  ],
+  "mode": "collect",
+  "selected_date": "2026-04-11",
+  "slots": [
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477139425",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "08:00 - 09:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477172193",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "09:00 - 10:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477204961",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "10:00 - 11:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477270497",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "11:00 - 12:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477303265",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "12:00 - 13:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477336033",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "13:00 - 14:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477368801",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "14:00 - 15:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477401569",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "15:00 - 16:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477434337",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "16:00 - 17:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477467105",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "17:00 - 18:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477499873",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "18:00 - 19:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477532641",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "19:00 - 20:00"
+    },
+    {
+      "availability": "Unavailable",
+      "availability_code": "not_available",
+      "available": false,
+      "currency": "EUR",
+      "id": "8879477565409",
+      "price": 0.0,
+      "price_label": "0,00 €",
+      "time": "20:00 - 21:00"
+    }
+  ]
+}

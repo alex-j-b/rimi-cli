@@ -1,0 +1,50 @@
+version: 1
+command:
+  id: wallet_balance
+  cli_path:
+  - wallet
+  - balance
+  summary: Show Rimi Money balance
+  complete: true
+  description: Return the signed-in account's Rimi Money balance and spendable amount.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/rimi-money
+    path_template: /epood/rimi-money
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: rimi-money
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/checkout/summary/user
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: wallet_balance_001
+    path: fixtures/wallet_balance_001
+  goldens:
+  - id: wallet_balance_001
+    path: goldens/wallet_balance_001.json

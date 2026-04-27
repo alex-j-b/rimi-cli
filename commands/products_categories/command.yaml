@@ -1,0 +1,60 @@
+version: 1
+command:
+  id: products_categories
+  cli_path:
+  - products
+  - categories
+  summary: List product categories
+  complete: true
+  description: Return the Rimi product category tree.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/api/v1/content/category-tree
+    path_template: /epood/api/v1/content/category-tree
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: api
+    - kind: literal
+      value: v1
+    - kind: literal
+      value: content
+    - kind: literal
+      value: category-tree
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/products/dairy-products-eggs-cheese/eggs/chicken-eggs/vabapidamisel-kanade-munad-kodutalu-10tk/p/978403
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        locale:
+          type: string
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: products_categories_001
+    path: fixtures/products_categories_001
+  goldens:
+  - id: products_categories_001
+    path: goldens/products_categories_001.json
+  request_mapping:
+    request.query.locale: ee-en

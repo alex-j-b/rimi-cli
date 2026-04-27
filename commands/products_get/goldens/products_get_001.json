@@ -1,0 +1,42 @@
+{
+  "availability": "in_stock",
+  "available": true,
+  "cart": {
+    "max_quantity": 8,
+    "quantity": 1,
+    "step": 1,
+    "unit": "Piece"
+  },
+  "categories": [
+    {
+      "id": "SH-3",
+      "name": "Drinks",
+      "url": "/epood/en/products/drinks/c/SH-3"
+    },
+    {
+      "id": "SH-3-12",
+      "name": "Water",
+      "url": "/epood/en/products/drinks/water/c/SH-3-12"
+    },
+    {
+      "id": "SH-3-12-8",
+      "name": "Unflavored water, non-carbonated",
+      "url": "/epood/en/products/drinks/water/unflavored-water-non-carbonated/c/SH-3-12-8"
+    }
+  ],
+  "currency": "EUR",
+  "description": "Saaremaa Vesi on pärit Saaremaalt looduslikust puhtast piirkonnast. Saaremaa Vett on Eestis müüdud juba ligi 15 aastat ja selle ajaga on see toode võitnud väga paljude poolehoiu. Saaremaa Vesi on üks enimmüüdud pudelivee brände Eestis.",
+  "favorite": true,
+  "id": "106392",
+  "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_106392_PCE_EE",
+  "message": null,
+  "name": "Joogivesi Saaremaa 5l",
+  "nutrition": null,
+  "price": 1.15,
+  "unit_price": {
+    "amount": 0.23,
+    "formatted": "0,23 €/l",
+    "unit": "l"
+  },
+  "url": "https://www.rimi.ee/epood/products/drinks/water/unflavored-water-non-carbonated/joogivesi-saaremaa-5l/p/106392"
+}

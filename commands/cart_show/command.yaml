@@ -1,0 +1,58 @@
+version: 1
+command:
+  id: cart_show
+  cli_path:
+  - cart
+  - show
+  summary: Show cart
+  complete: true
+  description: Return the current Rimi cart summary and line items.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/api/v1/cart
+    path_template: /epood/api/v1/cart
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: api
+    - kind: literal
+      value: v1
+    - kind: literal
+      value: cart
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        locale:
+          type: string
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: cart_show_001
+    path: fixtures/cart_show_001
+  goldens:
+  - id: cart_show_001
+    path: goldens/cart_show_001.json
+  request_mapping:
+    request.query.locale: ee-en

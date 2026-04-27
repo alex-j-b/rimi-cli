@@ -1,0 +1,67 @@
+version: 1
+command:
+  id: checkout_prices
+  cli_path:
+  - checkout
+  - prices
+  summary: Show checkout prices
+  complete: true
+  description: Return checkout cart price breakdown.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/users/current/carts/{cart_id}/prices
+    path_template: /epood/users/current/carts/{cart_id}/prices
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: users
+    - kind: literal
+      value: current
+    - kind: literal
+      value: carts
+    - kind: parameter
+      value: cart_id
+    - kind: literal
+      value: prices
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/checkout/summary/user
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: checkout_prices_001
+    path: fixtures/checkout_prices_001
+  goldens:
+  - id: checkout_prices_001
+    path: goldens/checkout_prices_001.json
+  arguments:
+  - name: cart-id
+    python_name: cart_id
+    kind: option
+    type: string
+    required: true
+    help: Checkout cart id from the Rimi checkout URL or API.
+  request_mapping:
+    request.params.cart_id: args.cart_id

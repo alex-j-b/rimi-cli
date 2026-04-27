@@ -1,0 +1,13 @@
+{
+  "method": "PUT",
+  "url": "https://www.rimi.ee/epood/favorite/product/4006297",
+  "path": "/epood/favorite/product/4006297",
+  "query": {},
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "content-type": "application/json",
+    "origin": "https://www.rimi.ee",
+    "referer": "https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/ciabattakukkel-hele-eesti-pagar-100g/p/4006297"
+  }
+}

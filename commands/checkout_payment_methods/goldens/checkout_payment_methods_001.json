@@ -1,0 +1,112 @@
+{
+  "cart_id": "fixture-cart-id",
+  "count": 8,
+  "methods": [
+    {
+      "code": "ee.ep.seb_ob_ee",
+      "is_card": false,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": "https://payment.ecommerce.sebgroup.com/assets/payment_methods/seb-8099b005a2a78dab9b2002ee1d53da9f8960f78e5dbd4b19054daeef27819fcf.svg",
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "EE AS SEB Pank",
+      "type": "bank_link"
+    },
+    {
+      "code": "ee.ep.lhv_ob_ee",
+      "is_card": false,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": "https://payment.ecommerce.sebgroup.com/assets/payment_methods/lhv-fc22e38aa5a9d1a127c14daa264a4c642aa9f3320d186bedcb14d96b91920446.svg",
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "EE AS LHV Pank",
+      "type": "bank_link"
+    },
+    {
+      "code": "ee.ep.swed_ob_ee",
+      "is_card": false,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": "https://payment.ecommerce.sebgroup.com/assets/payment_methods/swedbank-906c39ec77508701740161e5ef9086779323f1c4643680e6d6f2d1776d924d6c.svg",
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "EE Swedbank AS",
+      "type": "bank_link"
+    },
+    {
+      "code": "ee.ep.coop_ob_ee",
+      "is_card": false,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": "https://payment.ecommerce.sebgroup.com/assets/payment_methods/coop-9af0c77ea70bf9549cb8985aef4de705c3f477601d574d8f73b9365daf9022d8.svg",
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "EE Coop Pank AS",
+      "type": "bank_link"
+    },
+    {
+      "code": "ee.ep_swedbank.card",
+      "is_card": true,
+      "is_gift_card": false,
+      "is_recurring": true,
+      "logo_url": "https://pay.every-pay.eu/assets/payment_methods/cards-d1c6c23f4274387ab5da11549a4f14ab6c7ad42323d025c25c8323e6d7fe409c.svg",
+      "max_amount": null,
+      "one_click_pay_supported": true,
+      "reserved_amount": null,
+      "title": "VISA/MasterCard",
+      "type": "card"
+    },
+    {
+      "code": "ee.ep_swedbank.card_applepay",
+      "is_card": true,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": null,
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "ApplePay",
+      "type": "apple_pay"
+    },
+    {
+      "code": "ee.ep_swedbank.card_googlepay",
+      "is_card": true,
+      "is_gift_card": false,
+      "is_recurring": false,
+      "logo_url": null,
+      "max_amount": null,
+      "one_click_pay_supported": true,
+      "reserved_amount": null,
+      "title": "GooglePay",
+      "type": "google_pay"
+    },
+    {
+      "code": "ee_giftcards",
+      "is_card": false,
+      "is_gift_card": true,
+      "is_recurring": false,
+      "logo_url": null,
+      "max_amount": null,
+      "one_click_pay_supported": false,
+      "reserved_amount": null,
+      "title": "Kinkekaart",
+      "type": "gift_card"
+    }
+  ],
+  "saved_cards": [
+    {
+      "default": false,
+      "id": "70001",
+      "method_code": "ee.ep_swed",
+      "pan_number": "**4242",
+      "type": "MASTERCARD"
+    }
+  ],
+  "saved_cards_count": 1
+}

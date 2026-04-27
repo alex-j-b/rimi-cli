@@ -1,0 +1,13 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/api/v1/cart?locale=ee-en",
+  "path": "/epood/api/v1/cart",
+  "query": {
+    "locale": "ee-en"
+  },
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3"
+  }
+}

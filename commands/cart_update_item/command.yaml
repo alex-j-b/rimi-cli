@@ -1,0 +1,84 @@
+version: 1
+command:
+  id: cart_update_item
+  cli_path:
+  - cart
+  - update-item
+  summary: Update cart item
+  complete: true
+  description: Set the quantity for one Rimi cart item.
+  request:
+    method: PUT
+    url_template: https://www.rimi.ee/epood/cart/change
+    path_template: /epood/cart/change
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: cart
+    - kind: literal
+      value: change
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      content-type: application/json
+      origin: https://www.rimi.ee
+      referer: https://www.rimi.ee/epood/en/my-profile/favourites
+    cookies: {}
+    body: {}
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        content-type:
+          type: string
+        origin:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema:
+      type: object
+      properties:
+        _method:
+          type: string
+        product:
+          type: string
+        amount:
+          type: string
+      additionalProperties: false
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: cart_update_item_001
+    path: fixtures/cart_update_item_001
+  goldens:
+  - id: cart_update_item_001
+    path: goldens/cart_update_item_001.json
+  arguments:
+  - name: product-id
+    python_name: product_id
+    kind: argument
+    type: string
+    required: true
+    help: Rimi product id, for example 4006297.
+  - name: quantity
+    python_name: quantity
+    kind: option
+    type: number
+    required: true
+    help: Desired cart quantity. Use 0 to remove the item if the site accepts it.
+  request_mapping:
+    request.body._method: put
+    request.body.amount: args.quantity
+    request.body.product: args.product_id

@@ -1,0 +1,14 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/en/my-profile/favourites/personal-products/categories?suggested=0&favorites=1",
+  "path": "/epood/en/my-profile/favourites/personal-products/categories",
+  "query": {
+    "suggested": "0",
+    "favorites": "1"
+  },
+  "headers": {
+    "accept": "*/*",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/my-profile/favourites"
+  }
+}

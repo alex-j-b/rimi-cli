@@ -1,0 +1,91 @@
+version: 1
+command:
+  id: favorites_list
+  cli_path:
+  - favorites
+  - list
+  summary: List favorite products
+  complete: true
+  description: Return favorite products for one favorites category.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/my-profile/favourites/personal-products/categories/{category_id}/products
+    path_template: /epood/en/my-profile/favourites/personal-products/categories/{category_id}/products
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: my-profile
+    - kind: literal
+      value: favourites
+    - kind: literal
+      value: personal-products
+    - kind: literal
+      value: categories
+    - kind: parameter
+      value: category_id
+    - kind: literal
+      value: products
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/my-profile/favourites
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        suggested:
+          type: integer
+        favorites:
+          type: integer
+        is_list_layout:
+          type: integer
+        currentPage:
+          type: integer
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: favorites_list_001
+    path: fixtures/favorites_list_001
+  goldens:
+  - id: favorites_list_001
+    path: goldens/favorites_list_001.json
+  arguments:
+  - name: category-id
+    python_name: category_id
+    kind: option
+    type: string
+    required: false
+    default: SH-12
+    help: Favorites category id, for example SH-12.
+  - name: page
+    python_name: page
+    kind: option
+    type: integer
+    required: false
+    default: 0
+    help: Favorites result page number from the Rimi endpoint.
+  request_mapping:
+    request.params.category_id: args.category_id
+    request.query.currentPage: args.page
+    request.query.favorites: 1
+    request.query.is_list_layout: 1
+    request.query.suggested: 0

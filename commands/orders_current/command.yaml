@@ -1,0 +1,58 @@
+version: 1
+command:
+  id: orders_current
+  cli_path:
+  - orders
+  - current
+  summary: Show current order
+  complete: true
+  description: Return the current active order state, if one exists.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/payment/status/success/orders/current
+    path_template: /epood/payment/status/success/orders/current
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: payment
+    - kind: literal
+      value: status
+    - kind: literal
+      value: success
+    - kind: literal
+      value: orders
+    - kind: literal
+      value: current
+    params: {}
+    query: {}
+    headers:
+      accept: application/json, text/plain, */*
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/payment/status/success
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: orders_current_001
+    path: fixtures/orders_current_001
+  goldens:
+  - id: orders_current_001
+    path: goldens/orders_current_001.json

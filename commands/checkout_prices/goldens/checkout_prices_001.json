@@ -1,0 +1,27 @@
+{
+  "cart_id": "fixture-cart-id",
+  "currency": "EUR",
+  "left_to_pay": {
+    "amount": 121.34,
+    "currency": "EUR",
+    "formatted": "121,34 €"
+  },
+  "order_discounts": null,
+  "rimi_money_earned": {
+    "amount": 1.21,
+    "currency": null,
+    "formatted": "1,21"
+  },
+  "rimi_money_spent": null,
+  "social_card_balance_spent": null,
+  "total_price": {
+    "amount": 121.34,
+    "currency": "EUR",
+    "formatted": "121,34 €"
+  },
+  "vat": {
+    "amount": 23.45,
+    "currency": "EUR",
+    "formatted": "23,45 €"
+  }
+}

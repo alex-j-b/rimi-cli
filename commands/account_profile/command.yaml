@@ -1,0 +1,54 @@
+version: 1
+command:
+  id: account_profile
+  cli_path:
+  - account
+  - profile
+  summary: Show account profile
+  complete: true
+  description: Return profile details and saved account preferences.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/my-profile/profile-information
+    path_template: /epood/en/my-profile/profile-information
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: my-profile
+    - kind: literal
+      value: profile-information
+    params: {}
+    query: {}
+    headers:
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3?currentPage=1&pageSize=80&query=%3Apriceunit-desc%3AallCategories%3ASH-6-6-3%3AassortmentStatus%3AinAssortment
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: account_profile_001
+    path: fixtures/account_profile_001
+  goldens:
+  - id: account_profile_001
+    path: goldens/account_profile_001.json

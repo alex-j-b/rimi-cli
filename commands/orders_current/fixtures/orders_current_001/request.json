@@ -1,0 +1,11 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/payment/status/success/orders/current",
+  "path": "/epood/payment/status/success/orders/current",
+  "query": {},
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/payment/status/success"
+  }
+}

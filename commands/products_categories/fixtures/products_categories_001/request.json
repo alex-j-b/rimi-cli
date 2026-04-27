@@ -1,0 +1,13 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/api/v1/content/category-tree?locale=ee-en",
+  "path": "/epood/api/v1/content/category-tree",
+  "query": {
+    "locale": "ee-en"
+  },
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/products/dairy-products-eggs-cheese/eggs/chicken-eggs/vabapidamisel-kanade-munad-kodutalu-10tk/p/978403"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/api/v1/users/current/greeting?locale=ee-en",
+  "path": "/epood/api/v1/users/current/greeting",
+  "query": {
+    "locale": "ee-en"
+  },
+  "headers": {
+    "accept": "*/*",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/my-profile/favourites"
+  }
+}

@@ -1,0 +1,80 @@
+version: 1
+command:
+  id: checkout_choose_time_slot
+  cli_path:
+  - checkout
+  - choose-time-slot
+  summary: Choose checkout time slot
+  complete: true
+  description: Choose one Click & Collect time slot for the current checkout.
+  request:
+    method: POST
+    url_template: https://www.rimi.ee/epood/en/checkout/delivery/collect/time-slots/choose
+    path_template: /epood/en/checkout/delivery/collect/time-slots/choose
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: checkout
+    - kind: literal
+      value: delivery
+    - kind: literal
+      value: collect
+    - kind: literal
+      value: time-slots
+    - kind: literal
+      value: choose
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      content-type: application/x-www-form-urlencoded
+      origin: https://www.rimi.ee
+      referer: https://www.rimi.ee/epood/en/checkout/delivery/collect/time-slots
+    cookies: {}
+    body: {}
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        content-type:
+          type: string
+        origin:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema:
+      type: object
+      properties:
+        time_id:
+          type: string
+      additionalProperties: false
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: checkout_choose_time_slot_001
+    path: fixtures/checkout_choose_time_slot_001
+  goldens:
+  - id: checkout_choose_time_slot_001
+    path: goldens/checkout_choose_time_slot_001.json
+  arguments:
+  - name: time-id
+    python_name: time_id
+    kind: argument
+    type: string
+    required: true
+    help: Time slot id from checkout time-slots.
+  request_mapping:
+    request.body.time_id: args.time_id

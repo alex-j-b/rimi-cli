@@ -1,0 +1,11 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/users/current/carts/fixture-cart-id/payment/methods",
+  "path": "/epood/users/current/carts/fixture-cart-id/payment/methods",
+  "query": {},
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/checkout/summary/user"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "method": "PUT",
+  "url": "https://www.rimi.ee/epood/cart/change",
+  "path": "/epood/cart/change",
+  "query": {},
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "content-type": "application/json",
+    "origin": "https://www.rimi.ee",
+    "referer": "https://www.rimi.ee/epood/en/my-profile/favourites"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "available": true,
+  "category_id": "SH-6-6-3",
+  "count": 19,
+  "message": null,
+  "page": 1,
+  "page_size": 80,
+  "products": [
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "976554",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_976554_PCE_EE",
+      "name": "Singi-juustu croissant 100g",
+      "price": 1.45,
+      "price_label": "1.45 € per pcs.",
+      "unit_price": {
+        "amount": 14.5,
+        "formatted": "14,50 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/singi-juustu-croissant-100g/p/976554"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "917919",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Mitmevilja croissant 72g",
+      "price": 0.69,
+      "price_label": "0.69 € per pcs.",
+      "unit_price": {
+        "amount": 9.58,
+        "formatted": "9,58 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/mitmevilja-croissant-72g/p/917919"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4002664",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Mini Gruusia leivake 70g",
+      "price": 0.65,
+      "price_label": "0.65 € per pcs.",
+      "unit_price": {
+        "amount": 9.29,
+        "formatted": "9,29 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/mini-gruusia-leivake-70g/p/4002664"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "997274",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_80,q_auto:low,w_auto/ecom-cms/d9c069e0f1f79dde39dc68512e3c5ab1efc2825b",
+      "name": "Croissant võiga 63g",
+      "price": 0.55,
+      "price_label": "0.55 € per pcs.",
+      "unit_price": {
+        "amount": 8.73,
+        "formatted": "8,73 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/croissant-voiga-63g/p/997274"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "974696",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_974696_PCE_EE",
+      "name": "Kiviahju päts jõhvikatega 350g",
+      "price": 2.79,
+      "price_label": "2.79 € per pcs.",
+      "unit_price": {
+        "amount": 7.97,
+        "formatted": "7,97 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/kiviahju-pats-johvikatega-350g/p/974696"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "277122",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Mitmeviljakukkel 35g",
+      "price": 0.25,
+      "price_label": "0.25 € per pcs.",
+      "unit_price": {
+        "amount": 7.14,
+        "formatted": "7,14 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/mitmeviljakukkel-35g/p/277122"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "290485",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Pikk sai juustuga Rimi pagaritelt 250g",
+      "price": 1.75,
+      "unit_price": null,
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/pikk-sai-juustuga-rimi-pagaritelt-250g/p/290485"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4002666",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_4002666_PCE_EE",
+      "name": "Prantsuse baguette Medomi 250g",
+      "price": 1.35,
+      "price_label": "1.35 € per pcs.",
+      "unit_price": {
+        "amount": 5.4,
+        "formatted": "5,40 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/prantsuse-baguette-medomi-250g/p/4002666"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "209119",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/b821da9405a9fe157949ca40850238c81d90542f",
+      "name": "Itaalia leib Bocatta 440g",
+      "price": 2.35,
+      "price_label": "2.35 € per pcs.",
+      "unit_price": {
+        "amount": 5.34,
+        "formatted": "5,34 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/itaalia-leib-bocatta-440g/p/209119"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4010689",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Kaerapäts durum juuretisega 350g",
+      "price": 1.69,
+      "price_label": "1.69 € per pcs.",
+      "unit_price": {
+        "amount": 4.83,
+        "formatted": "4,83 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/kaerapats-durum-juuretisega-350g/p/4010689"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4010711",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Mitmevilja baguette 250g",
+      "price": 1.19,
+      "price_label": "1.19 € per pcs.",
+      "unit_price": {
+        "amount": 4.76,
+        "formatted": "4,76 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/mitmevilja-baguette-250g/p/4010711"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "979602",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Rukkileib ilma lisatud pärmita 400g",
+      "price": 1.89,
+      "price_label": "1.89 € per pcs.",
+      "unit_price": {
+        "amount": 4.72,
+        "formatted": "4,72 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/rukkileib-ilma-lisatud-parmita-400g/p/979602"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4006297",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_48,q_auto:low,w_56/ecom-cms/7af94ee4a5bf78ce8f50a3f6f061cacc6cc0a783",
+      "name": "Ciabattakukkel hele Eesti Pagar 100g",
+      "price": 0.59,
+      "price_label": "0.59 € per pcs.",
+      "unit_price": {
+        "amount": 5.9,
+        "formatted": "5,90 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/ciabattakukkel-hele-eesti-pagar-100g/p/4006297"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "980089",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_980089_PCE_EE",
+      "name": "Rustikaalne peenleib Eesti Pagar 500g",
+      "price": 1.99,
+      "price_label": "1.99 € per pcs.",
+      "unit_price": {
+        "amount": 3.98,
+        "formatted": "3,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/rustikaalne-peenleib-eesti-pagar-500g/p/980089"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4010721",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_4010721_PCE_EE",
+      "name": "Tume juuretiseleib 500g",
+      "price": 1.99,
+      "price_label": "1.99 € per pcs.",
+      "unit_price": {
+        "amount": 3.98,
+        "formatted": "3,98 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/tume-juuretiseleib-500g/p/4010721"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4007030",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_4007030_PCE_EE",
+      "name": "Baguette tomati ja basiilikuga 155g",
+      "price": 0.6,
+      "price_label": "0.60 € per pcs.",
+      "unit_price": {
+        "amount": 3.43,
+        "formatted": "3,43 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/baguette-tomati-ja-basiilikuga-155g/p/4007030"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4009172",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_4009172_PCE_EE",
+      "name": "Hele ciabatta 300g",
+      "price": 0.84,
+      "unit_price": null,
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/hele-ciabatta-300g/p/4009172"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "209109",
+      "image_url": "https://rimibaltic-web-res.cloudinary.com/image/upload/c_limit,dpr_auto,f_auto,h_80,q_auto:low,w_auto/ecom-cms/d9c069e0f1f79dde39dc68512e3c5ab1efc2825b",
+      "name": "Tume Itaalia leib ciabatta 330g",
+      "price": 0.89,
+      "price_label": "0.89 € per pcs.",
+      "unit_price": {
+        "amount": 2.78,
+        "formatted": "2,78 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/tume-itaalia-leib-ciabatta-330g/p/209109"
+    },
+    {
+      "brand": null,
+      "category_id": "SH-6-6-3",
+      "currency": "EUR",
+      "id": "4008850",
+      "image_url": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,q_auto:low,w_auto/d_ecommerce:backend-fallback.png/MAT_4008850_PCE_EE",
+      "name": "Rukkileivake 90g",
+      "price": 0.25,
+      "price_label": "0.25 € per pcs.",
+      "unit_price": {
+        "amount": 2.5,
+        "formatted": "2,50 €/kg",
+        "unit": "kg"
+      },
+      "url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/rukkileivake-90g/p/4008850"
+    }
+  ],
+  "search_url": "/epood/en/products/bread-pastry-confectionery/rimi-bakeries/fresh-breads-buns/c/SH-6-6-3?currentPage=1&pageSize=80&query=%3Apriceunit-desc%3AallCategories%3ASH-6-6-3%3AassortmentStatus%3AinAssortment",
+  "sort": "priceunit-desc"
+}

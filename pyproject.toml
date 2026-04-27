@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rimi"
+version = "0.1.0"
+description = "Command-line client for Rimi e-store workflows"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27,<1",
+  "msgpack>=1,<2",
+  "pydantic>=2.8,<3",
+  "python-dotenv>=1,<2",
+  "PyYAML>=6,<7",
+  "rich>=13.7,<14",
+  "typer>=0.16,<1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9"
+]
+test = [
+  "pytest>=8.3,<9"
+]
+
+[project.scripts]
+rimi = "www_rimi_ee.cli:app"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["commands*", "shared*", "www_rimi_ee*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+commands = [
+  "*/command.yaml",
+  "*/processors/*.py"
+]
+
+[tool.autocli]
+schema_version = 1
+site_slug = "www-rimi-ee"
+site_module = "www_rimi_ee"
+primary_hosts = ["www.rimi.ee"]
+command_root = "commands"
+shared_package = "shared"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"

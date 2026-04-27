@@ -1,0 +1,532 @@
+{
+  "active": true,
+  "categories": [
+    "Joogid",
+    "Puuviljad, köögiviljad, lilled",
+    "Piimatooted, munad, juust",
+    "Valmistoit",
+    "Vegantooted",
+    "Külmutatud toidukaubad",
+    "Kauasäilivad toidukaubad",
+    "Puhastusvahendid",
+    "Maiustused ja snäkid",
+    "Liha- ja kalatooted",
+    "Leivad, saiad, kondiitritooted"
+  ],
+  "customer_name": "Martin Saar",
+  "fulfillment": {
+    "address": "Pargi tee 10, Tallinn, EE-10111",
+    "can_change": true,
+    "date": "12.04.2026",
+    "end_time": "10:00",
+    "express": false,
+    "mode": "pickup",
+    "mode_code": "cc",
+    "start_time": "09:00",
+    "store": "Rimi Demo Store"
+  },
+  "item_count": 32,
+  "items": [
+    {
+      "in_stock": false,
+      "name": "Õuna-peedimahl Kadarbiku 330ml",
+      "product_id": "1356286",
+      "purchasable": false,
+      "quantity": 2,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.99,
+        "currency": "EUR",
+        "formatted": "1.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/joogid/varske-mahl-smuuti/varske-mahl/ouna-peedimahl-kadarbiku-330ml/p/1356286"
+    },
+    {
+      "in_stock": true,
+      "name": "Ploomtomatid RIMI ECO, 500g",
+      "product_id": "965932",
+      "purchasable": true,
+      "quantity": 2,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.69,
+        "currency": "EUR",
+        "formatted": "3.69"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/tomat/ploomtomatid-rimi-eco-500g/p/965932"
+    },
+    {
+      "in_stock": true,
+      "name": "Kreeka jogurt 10% 380g",
+      "product_id": "915337",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.79,
+        "currency": "EUR",
+        "formatted": "1.79"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/jogurtid-desserdid-kohukesed/maitsestamata-jogurtid/kreeka-jogurt-10-380g/p/915337"
+    },
+    {
+      "in_stock": true,
+      "name": "Brokoli RIMI 350g",
+      "product_id": "978280",
+      "purchasable": true,
+      "quantity": 2,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.79,
+        "currency": "EUR",
+        "formatted": "1.79"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/kapsas/brokoli-rimi-350g/p/978280"
+    },
+    {
+      "in_stock": true,
+      "name": "Broileri-köögiviljakotlet 300g",
+      "product_id": "2000721",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 4.09,
+        "currency": "EUR",
+        "formatted": "4.09"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/valmistoit/jahutatud-valmistoit/broileri-koogiviljakotlet-300g/p/2000721"
+    },
+    {
+      "in_stock": true,
+      "name": "Šampinjonid kg",
+      "product_id": "273557",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.99,
+        "currency": "EUR",
+        "formatted": "3.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/seened/sampinjonid-kg/p/273557"
+    },
+    {
+      "in_stock": true,
+      "name": "Pelmeenid köögiviljadega Gyoza 400g",
+      "product_id": "297078",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.99,
+        "currency": "EUR",
+        "formatted": "2.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/vegantooted/taimsed-kulmutatud-tooted/pelmeenid-koogiviljadega-gyoza-400g/p/297078"
+    },
+    {
+      "in_stock": true,
+      "name": "Sojatoode kreeka mango Alpro 400g",
+      "product_id": "987588",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.19,
+        "currency": "EUR",
+        "formatted": "3.19"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/vegantooted/taimsed-magustoidud/sojatoode-kreeka-mango-alpro-400g/p/987588"
+    },
+    {
+      "in_stock": true,
+      "name": "Veganšnitsel sojavalgust Garden Gourmet 180g",
+      "product_id": "996601",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.99,
+        "currency": "EUR",
+        "formatted": "3.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/vegantooted/taimsed-valmistoidud/vegansnitsel-sojavalgust-garden-gourmet-180g/p/996601"
+    },
+    {
+      "in_stock": true,
+      "name": "Kurk RIMI 300g",
+      "product_id": "815307",
+      "purchasable": true,
+      "quantity": 3,
+      "total_discount": {
+        "amount": -1.2,
+        "currency": "EUR",
+        "formatted": "-1,20"
+      },
+      "unit_price": {
+        "amount": 0.89,
+        "currency": "EUR",
+        "formatted": "0.89"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/kurk/kurk-rimi-300g/p/815307"
+    },
+    {
+      "in_stock": true,
+      "name": "Kartul pestud Laheotsa 2kg",
+      "product_id": "200892",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.79,
+        "currency": "EUR",
+        "formatted": "2.79"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/kartul/kartul-pestud-laheotsa-2kg/p/200892"
+    },
+    {
+      "in_stock": true,
+      "name": "Mahe Porgand I Love Eco 1kg",
+      "product_id": "816037",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.55,
+        "currency": "EUR",
+        "formatted": "2.55"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/porgand/mahe-porgand-i-love-eco-1kg/p/816037"
+    },
+    {
+      "in_stock": true,
+      "name": "Roheline aeduba, tükeldatud Rimi 400G",
+      "product_id": "808637",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.45,
+        "currency": "EUR",
+        "formatted": "1.45"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/kulmutatud-toidukaubad/kulmutatud-koogiviljad-marjad/kulmutatud-koogiviljad/roheline-aeduba-tukeldatud-rimi-400g/p/808637"
+    },
+    {
+      "in_stock": true,
+      "name": "Oad tomatikastmes küpsetatud Heinz 415g",
+      "product_id": "147298",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.35,
+        "currency": "EUR",
+        "formatted": "2.35"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/kauasailivad-toidukaubad/konserveeritud-koogiviljad/oad/oad-tomatikastmes-kupsetatud-heinz-415g/p/147298"
+    },
+    {
+      "in_stock": true,
+      "name": "Küüslauk kg",
+      "product_id": "210853",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 0.68,
+        "currency": "EUR",
+        "formatted": "0.68"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/juurviljad-ja-koogiviljad/kuuslauk/kuuslauk-kg/p/210853"
+    },
+    {
+      "in_stock": true,
+      "name": "Varsseller Rimi 450g",
+      "product_id": "297913",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": {
+        "amount": -0.6,
+        "currency": "EUR",
+        "formatted": "-0,60"
+      },
+      "unit_price": {
+        "amount": 1.09,
+        "currency": "EUR",
+        "formatted": "1.09"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/maitsetaimed/maitsetaimed/varsseller-rimi-450g/p/297913"
+    },
+    {
+      "in_stock": true,
+      "name": "Joogivesi Saaremaa 5l",
+      "product_id": "106392",
+      "purchasable": true,
+      "quantity": 2,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.15,
+        "currency": "EUR",
+        "formatted": "1.15"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/joogid/vesi/maitsestamata-vesi-gaseerimata/joogivesi-saaremaa-5l/p/106392"
+    },
+    {
+      "in_stock": true,
+      "name": "Lehträtikud Rimi Smart, 2 kih., 120tk",
+      "product_id": "815776",
+      "purchasable": true,
+      "quantity": 2,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.29,
+        "currency": "EUR",
+        "formatted": "1.29"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puhastusvahendid/majapidamispaber-ja-tualettpaber/lehtratikud/lehtratikud-rimi-smart-2-kih-120tk/p/815776"
+    },
+    {
+      "in_stock": true,
+      "name": "Banaan Cavendish 1kl, kg",
+      "product_id": "270939",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 0.9,
+        "currency": "EUR",
+        "formatted": "0.9"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/puuviljad/banaan/banaan-cavendish-1kl-kg/p/270939"
+    },
+    {
+      "in_stock": true,
+      "name": "Vabapidamisel kanade munad Kodutalu 10tk",
+      "product_id": "978403",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.99,
+        "currency": "EUR",
+        "formatted": "2.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/munad/munad/vabapidamisel-kanade-munad-kodutalu-10tk/p/978403"
+    },
+    {
+      "in_stock": true,
+      "name": "Kooritud kreeka pähklid Awake 150g",
+      "product_id": "804398",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.29,
+        "currency": "EUR",
+        "formatted": "2.29"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/maiustused-ja-snakid/kuivatatud-puuviljad-ja-pahklid/pahklid/kooritud-kreeka-pahklid-awake-150g/p/804398"
+    },
+    {
+      "in_stock": true,
+      "name": "Juust Mozzarella Galbani 125g",
+      "product_id": "214894",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.79,
+        "currency": "EUR",
+        "formatted": "1.79"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/juust/feta-ja-mozzarellajuustud/juust-mozzarella-galbani-125g/p/214894"
+    },
+    {
+      "in_stock": true,
+      "name": "Hapukoor Tere 30% 300g",
+      "product_id": "4003982",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.19,
+        "currency": "EUR",
+        "formatted": "2.19"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/koored/hapukoor/hapukoor-tere-30-300g/p/4003982"
+    },
+    {
+      "in_stock": true,
+      "name": "Või MO Saaremaa 82% 200g",
+      "product_id": "291032",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.59,
+        "currency": "EUR",
+        "formatted": "2.59"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/void-ja-margariinid/voi/voi-mo-saaremaa-82-200g/p/291032"
+    },
+    {
+      "in_stock": true,
+      "name": "Toorjuust Classic Philadelphia 200g",
+      "product_id": "212051",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.69,
+        "currency": "EUR",
+        "formatted": "3.69"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/juust/maardejuustud-toorjuustud/toorjuust-classic-philadelphia-200g/p/212051"
+    },
+    {
+      "in_stock": true,
+      "name": "Täispiim 3,6%-4,2% Farmi 1l",
+      "product_id": "911088",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.65,
+        "currency": "EUR",
+        "formatted": "1.65"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/piimad/piim/taispiim-3-6--4-2-farmi-1l/p/911088"
+    },
+    {
+      "in_stock": true,
+      "name": "Piim Alma 2,5% 1,5l",
+      "product_id": "200280",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 1.45,
+        "currency": "EUR",
+        "formatted": "1.45"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/piimatooted-munad-juust/piimad/piim/piim-alma-2-5-1-5l/p/200280"
+    },
+    {
+      "in_stock": true,
+      "name": "Roheline lehtsalat potis Rimi tk",
+      "product_id": "298880",
+      "purchasable": true,
+      "quantity": 2,
+      "total_discount": {
+        "amount": -1.4,
+        "currency": "EUR",
+        "formatted": "-1,40"
+      },
+      "unit_price": {
+        "amount": 0.99,
+        "currency": "EUR",
+        "formatted": "0.99"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/rohelised-salatid/roheline-lehtsalat-potis-rimi-tk/p/298880"
+    },
+    {
+      "in_stock": true,
+      "name": "Õun Golden Delicious 1kl, kg Rimi",
+      "product_id": "297240",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 3.11,
+        "currency": "EUR",
+        "formatted": "3.11"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/puuviljad-koogiviljad-lilled/puuviljad/oun-ja-pirn/oun-golden-delicious-1kl-kg-rimi/p/297240"
+    },
+    {
+      "in_stock": true,
+      "name": "Pasta Farfalle Barilla 500g",
+      "product_id": "106543",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": null,
+      "unit_price": {
+        "amount": 2.19,
+        "currency": "EUR",
+        "formatted": "2.19"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/kauasailivad-toidukaubad/makaronid-ja-riis/makaronid-pasta/pasta-farfalle-barilla-500g/p/106543"
+    },
+    {
+      "in_stock": true,
+      "name": "Jahutatud lõhefilee B-trim",
+      "product_id": "901731",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": {
+        "amount": -5.5,
+        "currency": "EUR",
+        "formatted": "-5,50"
+      },
+      "unit_price": {
+        "amount": 38.48,
+        "currency": "EUR",
+        "formatted": "38.48"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/liha--ja-kalatooted/varske-kala/lohe-forell/jahutatud-lohefilee-b-trim/p/901731"
+    },
+    {
+      "in_stock": true,
+      "name": "Ciabattakukkel hele Eesti Pagar 100g",
+      "product_id": "4006297",
+      "purchasable": true,
+      "quantity": 1,
+      "total_discount": {
+        "amount": -0.18,
+        "currency": "EUR",
+        "formatted": "-0,18"
+      },
+      "unit_price": {
+        "amount": 0.59,
+        "currency": "EUR",
+        "formatted": "0.59"
+      },
+      "url": "https://www.rimi.ee/epood/ee/tooted/leivad-saiad-kondiitritooted/rimi-pagarid/varsked-leivad-kuklid/ciabattakukkel-hele-eesti-pagar-100g/p/4006297"
+    }
+  ],
+  "not_purchasable_count": 1,
+  "order_id": "fixture-order-id",
+  "out_of_stock_count": 1,
+  "placed_at": "11.04.2026",
+  "signed_in": true,
+  "status": "Amendable",
+  "totals": {
+    "currency": "EUR",
+    "delivery": {
+      "amount": 0,
+      "currency": "EUR",
+      "formatted": "0,00 €"
+    },
+    "loyalty_points": 1.21,
+    "packaging": {
+      "amount": 1.99,
+      "currency": "EUR",
+      "formatted": "1,99 €"
+    },
+    "rimi_money_earned": 1.21,
+    "savings": null,
+    "stickers_earned": 0,
+    "tax": {
+      "amount": 22.73,
+      "currency": "EUR",
+      "formatted": "22,73 €"
+    },
+    "total": {
+      "amount": 117.63,
+      "currency": "EUR",
+      "formatted": "117,63 €"
+    }
+  }
+}

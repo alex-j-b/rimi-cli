@@ -1,0 +1,69 @@
+version: 1
+command:
+  id: favorites_remove
+  cli_path:
+  - favorites
+  - remove
+  summary: Remove favorite product
+  complete: true
+  description: Remove one product from favorites.
+  request:
+    method: DELETE
+    url_template: https://www.rimi.ee/epood/favorite/product/{product_id}
+    path_template: /epood/favorite/product/{product_id}
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: favorite
+    - kind: literal
+      value: product
+    - kind: parameter
+      value: product_id
+    params: {}
+    query: {}
+    headers:
+      accept: application/json, text/plain, */*
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      content-type: application/json
+      origin: https://www.rimi.ee
+      referer: https://www.rimi.ee/epood/en/my-profile/favourites
+    cookies: {}
+    body: []
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        content-type:
+          type: string
+        origin:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: favorites_remove_001
+    path: fixtures/favorites_remove_001
+  goldens:
+  - id: favorites_remove_001
+    path: goldens/favorites_remove_001.json
+  arguments:
+  - name: product-id
+    python_name: product_id
+    kind: argument
+    type: string
+    required: true
+    help: Rimi product id, for example 4000174.
+  request_mapping:
+    request.params.product_id: args.product_id

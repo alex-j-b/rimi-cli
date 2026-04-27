@@ -1,0 +1,70 @@
+version: 1
+command:
+  id: wallet_apply
+  cli_path:
+  - wallet
+  - apply
+  summary: Apply Rimi Money
+  complete: true
+  description: Apply a Rimi Money amount to the current checkout cart.
+  request:
+    method: POST
+    url_template: https://www.rimi.ee/epood/rimi-money
+    path_template: /epood/rimi-money
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: rimi-money
+    params: {}
+    query: {}
+    headers:
+      accept: application/json
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      content-type: application/json
+      origin: https://www.rimi.ee
+      referer: https://www.rimi.ee/epood/en/checkout/summary/user
+    cookies: {}
+    body: {}
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        content-type:
+          type: string
+        origin:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema:
+      type: object
+      properties:
+        amount:
+          type: string
+      additionalProperties: false
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: wallet_apply_001
+    path: fixtures/wallet_apply_001
+  goldens:
+  - id: wallet_apply_001
+    path: goldens/wallet_apply_001.json
+  arguments:
+  - name: amount
+    python_name: amount
+    kind: argument
+    type: number
+    required: true
+    help: Rimi Money amount to apply, for example 3.71.
+  request_mapping:
+    request.body.amount: args.amount

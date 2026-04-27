@@ -1,0 +1,36 @@
+{
+  "addresses": [
+    {
+      "address": "Tamme tee 12 - 4, Kesklinna linnaosa, Harju maakond, EE-10111",
+      "id": "80001",
+      "notes": "Leave by the grey mailbox"
+    }
+  ],
+  "car_plates": [
+    {
+      "id": "80002",
+      "plate": "123ABC"
+    }
+  ],
+  "favorite_store": {
+    "address": "Pargi tee 10, Tallinn, EE-10111",
+    "name": "Rimi Demo Store"
+  },
+  "payment_cards": [
+    {
+      "id": "70001",
+      "pan_number": "**4242"
+    }
+  ],
+  "profile": {
+    "email": "martin.saar@example.com",
+    "name": "Martin Saar",
+    "phone": "+372 5550 0100",
+    "surname": "Saar"
+  },
+  "rimi_money": {
+    "balance": "3,71",
+    "currency": "EUR"
+  },
+  "signed_in": true
+}

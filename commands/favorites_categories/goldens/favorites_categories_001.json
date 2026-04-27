@@ -1,0 +1,83 @@
+{
+  "categories": [
+    {
+      "id": "SH-6",
+      "item_count": 2,
+      "name": "Bread, pastry, confectionery",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-6/products"
+    },
+    {
+      "id": "SH-8",
+      "item_count": 24,
+      "name": "Meat and fish products",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-8/products"
+    },
+    {
+      "id": "SH-5",
+      "item_count": 4,
+      "name": "Children's goods",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-5/products"
+    },
+    {
+      "id": "SH-3",
+      "item_count": 3,
+      "name": "Drinks",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-3/products"
+    },
+    {
+      "id": "SH-13",
+      "item_count": 26,
+      "name": "Groceries",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-13/products"
+    },
+    {
+      "id": "SH-17",
+      "item_count": 14,
+      "name": "Vegan products",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-17/products"
+    },
+    {
+      "id": "SH-4",
+      "item_count": 6,
+      "name": "Frozen foods",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-4/products"
+    },
+    {
+      "id": "SH-14",
+      "item_count": 7,
+      "name": "Detergents and cleaning supplies",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-14/products"
+    },
+    {
+      "id": "SH-2",
+      "item_count": 7,
+      "name": "Self-care products",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-2/products"
+    },
+    {
+      "id": "SH-10",
+      "item_count": 2,
+      "name": "Household and leisure goods",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-10/products"
+    },
+    {
+      "id": "SH-12",
+      "item_count": 43,
+      "name": "Fruits, vegetables, flowers",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-12/products"
+    },
+    {
+      "id": "SH-11",
+      "item_count": 14,
+      "name": "Dairy products, eggs, cheese",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-11/products"
+    },
+    {
+      "id": "SH-9",
+      "item_count": 10,
+      "name": "Sweets and snacks",
+      "products_url": "/epood/en/my-profile/favourites/personal-products/categories/SH-9/products"
+    }
+  ],
+  "count": 13
+}

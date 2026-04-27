@@ -1,0 +1,16 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/en/my-profile/favourites/personal-products/categories/SH-12/products?suggested=0&favorites=1&is_list_layout=1&currentPage=0",
+  "path": "/epood/en/my-profile/favourites/personal-products/categories/SH-12/products",
+  "query": {
+    "suggested": "0",
+    "favorites": "1",
+    "is_list_layout": "1",
+    "currentPage": "0"
+  },
+  "headers": {
+    "accept": "application/json",
+    "user-agent": "Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)",
+    "referer": "https://www.rimi.ee/epood/en/my-profile/favourites"
+  }
+}

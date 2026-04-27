@@ -1,0 +1,67 @@
+version: 1
+command:
+  id: products_get
+  cli_path:
+  - products
+  - get
+  summary: Get product details
+  complete: true
+  description: Return details for one Rimi product.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/products/p/{product_id}
+    path_template: /epood/en/products/p/{product_id}
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: products
+    - kind: literal
+      value: p
+    - kind: parameter
+      value: product_id
+    params: {}
+    query: {}
+    headers:
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/my-profile/favourites
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+        cache-control:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: products_get_001
+    path: fixtures/products_get_001
+  goldens:
+  - id: products_get_001
+    path: goldens/products_get_001.json
+  arguments:
+  - name: product-id
+    python_name: product_id
+    kind: argument
+    type: string
+    required: true
+    help: Rimi product id, for example 106392.
+  request_mapping:
+    request.params.product_id: args.product_id

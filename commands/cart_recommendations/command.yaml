@@ -1,0 +1,56 @@
+version: 1
+command:
+  id: cart_recommendations
+  cli_path:
+  - cart
+  - recommendations
+  summary: List cart recommendations
+  complete: true
+  description: Return recommended products for the current checkout cart.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/checkout/cart/recommendations
+    path_template: /epood/en/checkout/cart/recommendations
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: checkout
+    - kind: literal
+      value: cart
+    - kind: literal
+      value: recommendations
+    params: {}
+    query: {}
+    headers:
+      accept: text/html
+      user-agent: Mozilla/5.0 (compatible; rimi-cli/0.1; +https://www.rimi.ee)
+      referer: https://www.rimi.ee/epood/en/checkout
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        accept:
+          type: string
+        user-agent:
+          type: string
+        referer:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: cart_recommendations_001
+    path: fixtures/cart_recommendations_001
+  goldens:
+  - id: cart_recommendations_001
+    path: goldens/cart_recommendations_001.json
