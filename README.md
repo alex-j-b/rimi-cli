@@ -16,11 +16,11 @@
 
 ---
 
-## What Is This?
+## Overview
 
-`rimi` is a command-line interface for `www.rimi.ee`, covering product browsing, favorites, cart, checkout, orders, account profile, and Rimi Money flows.
+`rimi` is an unofficial command-line interface for the Rimi e-store. It gives you a scriptable way to browse products, manage favorites and cart state, inspect account data, and work with checkout, orders, and wallet flows.
 
-This project is not an official Rimi client. It sends HTTP requests to Rimi's public website using the same kinds of request shapes a browser session uses.
+Under the hood, it talks to the same web endpoints the Rimi storefront uses, making it useful both in the terminal and in AI-assisted workflows.
 
 ## Requirements
 
