@@ -35,25 +35,25 @@ Install from the GitHub repository:
 uv tool install rimi --from git+https://github.com/alex-j-b/rimi-cli.git
 ```
 
-## Environment
+## Auth Headers
 
-Copy the example environment file:
-
-```bash
-cp .env.example .env
-```
-
-The runtime loads `.env` from the repository root. Shell environment variables take precedence over `.env`.
-
-Account-specific commands need your own authenticated Rimi browser session headers:
+Account-specific commands need your own authenticated Rimi browser session headers. Store them in your system keyring:
 
 ```bash
-PLAYWRIGHT_HEADERS_JSON='{"headers":{"cookie":"<your browser cookie header>","x-csrf-token":"<csrf token if present>"}}'
+rimi auth store-headers --file rimi-network-headers.json
 ```
 
-`PLAYWRIGHT_HEADERS_JSON` must be a JSON object with a `headers` object, matching the shape returned by Playwright's `request.allHeaders()`. The CLI only merges session-sensitive headers at runtime, such as `cookie`, `authorization`, CSRF/XSRF token headers, `x-requested-with`, and header names containing `auth`, `csrf`, `session`, or `token`.
+You can also pipe the JSON through stdin:
 
-If you use this CLI with an AI coding agent, ask the agent to refresh `PLAYWRIGHT_HEADERS_JSON` for you from an authenticated browser session. The agent should update your local `.env` without printing cookies or tokens in the chat.
+```bash
+printf '%s\n' '<playwright headers json>' | rimi auth store-headers
+```
+
+The JSON must be an object with a `headers` object, matching the shape returned by Playwright's `request.allHeaders()`. The CLI stores this payload in the system keyring under service `rimi`, account `playwright-headers-json`, and only merges session-sensitive headers at runtime, such as `cookie`, `authorization`, CSRF/XSRF token headers, `x-requested-with`, and header names containing `auth`, `csrf`, `session`, or `token`.
+
+For manual or CI runs, `PLAYWRIGHT_HEADERS_JSON` remains available as a process environment override. Do not put live cookies or tokens in shell history.
+
+If you use this CLI with an AI coding agent, ask the agent to refresh the keyring item from an authenticated browser session without printing cookies or tokens in the chat.
 
 ## Usage
 
@@ -170,7 +170,7 @@ The offline contract tests replay captured fixtures and compare post-processed J
 
 ## Privacy And Security
 
-- Authenticated requests depend on headers you provide through `PLAYWRIGHT_HEADERS_JSON`.
+- Authenticated requests depend on headers you provide through the system keyring or the `PLAYWRIGHT_HEADERS_JSON` process environment override.
 - Treat browser cookies, authorization headers, CSRF/XSRF tokens, cart IDs, order IDs, and profile data as secrets.
 - Use this project only with accounts and sessions you are authorized to access, and review Rimi's current terms before automation.
 

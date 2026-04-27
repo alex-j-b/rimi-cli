@@ -16,8 +16,6 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 - `www_rimi_ee/runtime.py`: workspace-local CLI runtime.
 - `www_rimi_ee/testing.py`: workspace-local contract test helpers.
 - `skills/build-cli/SKILL.md`: iterative workflow for developing this CLI with user feedback.
-- `.env`: local runtime environment. `PLAYWRIGHT_HEADERS_JSON` can supply live-session headers.
-- `.env.example`: example environment file.
 
 ## Governing Principles
 
@@ -28,7 +26,7 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 - Goldens must reflect intentionally approved post-processed JSON, not raw transport bodies.
 - Keep output schemas explicit and stable once approved.
 - If the response is HTML, parse it structurally when possible.
-- Session-sensitive headers should come from `PLAYWRIGHT_HEADERS_JSON`, not persisted fixtures.
+- Session-sensitive headers should come from the system keyring or the `PLAYWRIGHT_HEADERS_JSON` process environment override, not persisted fixtures.
 
 ## Working With This Workspace
 
@@ -40,16 +38,16 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 
 ## Updating Live Session Headers
 
-Authenticated commands need fresh browser-session headers in `.env` as `PLAYWRIGHT_HEADERS_JSON`.
+Authenticated commands need fresh browser-session headers stored in the system keyring.
 
 - If headers are missing or stale, use Playwright to open `https://www.rimi.ee/` and ask the user to sign in when needed.
 - Wait for a representative authenticated Rimi request, then call `await request.allHeaders()` in Playwright.
 - Write `JSON.stringify({ headers })` to a temporary browser local-storage key such as `autocli.playwrightHeadersJson`.
 - Persist the browser context to the workspace-local `.autocli-playwright-storage-state.json` path.
-- Read that storage-state file locally, extract the temporary local-storage value, and write `.env` as `PLAYWRIGHT_HEADERS_JSON=<that JSON value>`.
+- Read that storage-state file locally, extract the temporary local-storage value, and pass it to `rimi auth store-headers` through stdin or `--file`.
 - Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIGHT_HEADERS_JSON` values in the conversation or logs.
-- Do not commit `.env`, `.autocli-playwright-storage-state.json`, or any captured private session values.
-- Keep session-sensitive values in `.env`; do not copy them into fixtures, goldens, `command.yaml`, README examples, or tests.
+- Do not commit `.autocli-playwright-storage-state.json` or any captured private session values.
+- Keep session-sensitive values in the system keyring; do not copy them into fixtures, goldens, `command.yaml`, README examples, or tests.
 
 ## Common Failure Modes
 
@@ -65,4 +63,4 @@ Authenticated commands need fresh browser-session headers in `.env` as `PLAYWRIG
 - CLI help: `rimi --help` or `python -m www_rimi_ee --help`
 - Command help: `rimi <command path> --help`
 - Contract tests: `uv run --extra dev python -m pytest -q commands/<command_id>/tests/test_command.py`
-- Live authenticated runs can use `PLAYWRIGHT_HEADERS_JSON={...}` in `.env`
+- Live authenticated runs can use the `PLAYWRIGHT_HEADERS_JSON` process environment override
