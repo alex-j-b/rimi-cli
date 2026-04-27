@@ -1,4 +1,3 @@
-
 """Generated command-contract test."""
 
 from __future__ import annotations

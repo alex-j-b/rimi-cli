@@ -12,29 +12,29 @@ def _quantity_value(value: object) -> object:
 
 
 def run(context: dict[str, object]) -> dict[str, object]:
-    response = context.get("response")
-    args = context.get("args")
+    response = context.get('response')
+    args = context.get('args')
     if not isinstance(response, dict) or not isinstance(args, dict):
-        raise ValueError("Missing processor context")
+        raise ValueError('Missing processor context')
 
-    body = response.get("body")
+    body = response.get('body')
     if not isinstance(body, str):
-        raise ValueError("Expected JSON response body")
+        raise ValueError('Expected JSON response body')
 
     payload = json.loads(body)
-    if isinstance(payload, dict) and isinstance(payload.get("message"), str):
-        context["output"] = {
-            "updated": False,
-            "product_id": str(args.get("product_id")),
-            "quantity": _quantity_value(args.get("quantity")),
-            "message": payload["message"],
+    if isinstance(payload, dict) and isinstance(payload.get('message'), str):
+        context['output'] = {
+            'updated': False,
+            'product_id': str(args.get('product_id')),
+            'quantity': _quantity_value(args.get('quantity')),
+            'message': payload['message'],
         }
         return context
 
-    context["output"] = {
-        "updated": 200 <= int(response.get("status", 0)) < 300,
-        "product_id": str(args.get("product_id")),
-        "quantity": _quantity_value(args.get("quantity")),
-        "message": None,
+    context['output'] = {
+        'updated': 200 <= int(response.get('status', 0)) < 300,
+        'product_id': str(args.get('product_id')),
+        'quantity': _quantity_value(args.get('quantity')),
+        'message': None,
     }
     return context

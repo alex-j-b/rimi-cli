@@ -145,11 +145,13 @@ Command definitions live under `commands/<command>/command.yaml`, with request s
 
 ## Tests
 
-Install dev/test dependencies and run the offline contract tests:
+Install dev/test dependencies, run the offline contract tests, and check formatting/linting:
 
 ```bash
 uv sync --extra dev
 uv run --extra dev python -m pytest -q
+uv run --extra dev ruff check .
+uv run --extra dev ruff format --check .
 ```
 
 Run one command's contract test:

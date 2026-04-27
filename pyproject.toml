@@ -46,7 +46,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-  "pytest>=8.3,<9"
+  "pytest>=8.3,<9",
+  "ruff>=0.14,<1"
 ]
 test = [
   "pytest>=8.3,<9"
@@ -84,3 +85,20 @@ shared_package = "shared"
 
 [tool.pytest.ini_options]
 addopts = "--import-mode=importlib"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = ["E501"]
+select = [
+  "B",
+  "E",
+  "F",
+  "I",
+  "UP"
+]
+
+[tool.ruff.format]
+quote-style = "single"
