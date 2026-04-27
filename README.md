@@ -1,6 +1,6 @@
 <div align="center">
     <img src="./media/logo.webp" alt="Rimi logo" width="160" height="160"/>
-    <h1>rimi</h1>
+    <h1>🛒 Rimi CLI</h1>
     <h3><em>A CLI for Rimi e-store.</em></h3>
 </div>
 
