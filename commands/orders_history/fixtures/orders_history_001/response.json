@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "content-encoding": "gzip",
+    "date": "Sat, 11 Apr 2026 14:23:10 GMT",
+    "cache-control": "no-cache, private",
+    "x-xss-protection": "1; mode=block",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "content-security-policy": "script-src 'self' 'nonce-MkaXwcFmEtZ8w3PcUXDyCi08haEW2EEO' 'strict-dynamic' *.googletagmanager.com *.cookiebot.com *.googleapis.com *.google.com *.gstatic.com *.cdn-apple.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com ;img-src 'self' rimibaltic-web-res.cloudinary.com rimibaltic-res.cloudinary.com payment.ecommerce.sebgroup.com *.every-pay.com *.cookiebot.com *.googletagmanager.com *.googleapis.com *.gstatic.com *.google.com *.google.lv *.google.lt *.google.ee *.googleusercontent.com *.doubleclick.net *.googleadservices.com *.googlesyndication.com *.onrimi.net apps.carboncloud.com data: *.rimi.lv *.rimi.lt *.rimi.ee;base-uri 'self';form-action 'self' *.every-pay.eu e.seb.ee payment.ecommerce.sebgroup.com api.lhv.eu log-in.swedbank.ee autentimine.cooppank.ee online.citadele.lv log-in.swedbank.lv ibanka.seb.lv log-in.swedbank.lt e.seb.lt login.luminoropenbanking.com;object-src 'none';frame-ancestors 'none';report-uri https://sentry.onrimi.net/api/24/security/?sentry_key=72b3ef4d5147352680353baa22273507&sentry_environment=production&sentry_release=5.34.0-159064d94692c030e7f644e70baf79b4256a26b0;upgrade-insecure-requests",
+    "x-cache": "Miss from cloudfront",
+    "via": "1.1 f93f2f426b728d86569aa882b636be18.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "HEL51-P5",
+    "x-amz-cf-id": "WZZ4chMwgt4whIijIf3s20MLWRjeWzo70iIVQgU6-ZSAI-R3AjEZzA=="
+  }
+}

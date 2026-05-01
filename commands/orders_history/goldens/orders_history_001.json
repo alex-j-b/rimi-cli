@@ -1,0 +1,240 @@
+{
+    "orders": [
+        {
+            "currency": "EUR",
+            "date": "2026-04-05",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306713276/invoice",
+            "order_id": "1306713276",
+            "status": "Your order has been completed",
+            "total": 186.19,
+            "total_cents": 18619,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306713276/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-03-29",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306666307/invoice",
+            "order_id": "1306666307",
+            "status": "Your order has been completed",
+            "total": 150.06,
+            "total_cents": 15006,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306666307/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-03-19",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306658100/invoice",
+            "order_id": "1306658100",
+            "status": "Your order has been completed",
+            "total": 124.58,
+            "total_cents": 12458,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306658100/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-03-11",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306632635/invoice",
+            "order_id": "1306632635",
+            "status": "Your order has been completed",
+            "total": 125.05,
+            "total_cents": 12505,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306632635/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-02-22",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306565561/invoice",
+            "order_id": "1306565561",
+            "status": "Your order has been completed",
+            "total": 151.47,
+            "total_cents": 15147,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306565561/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-02-16",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306529453/invoice",
+            "order_id": "1306529453",
+            "status": "Your order has been completed",
+            "total": 176.69,
+            "total_cents": 17669,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306529453/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-02-06",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306507213/invoice",
+            "order_id": "1306507213",
+            "status": "Your order has been completed",
+            "total": 97.62,
+            "total_cents": 9762,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306507213/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-01-29",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306478275/invoice",
+            "order_id": "1306478275",
+            "status": "Your order has been completed",
+            "total": 159.03,
+            "total_cents": 15903,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306478275/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-01-23",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306454131/invoice",
+            "order_id": "1306454131",
+            "status": "Your order has been completed",
+            "total": 89.57,
+            "total_cents": 8957,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306454131/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-01-16",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306430000/invoice",
+            "order_id": "1306430000",
+            "status": "Your order has been completed",
+            "total": 187.52,
+            "total_cents": 18752,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306430000/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2026-01-09",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306369504/invoice",
+            "order_id": "1306369504",
+            "status": "Your order has been completed",
+            "total": 133.62,
+            "total_cents": 13362,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306369504/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-12-30",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306367601/invoice",
+            "order_id": "1306367601",
+            "status": "Your order has been completed",
+            "total": 79.24,
+            "total_cents": 7924,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306367601/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-12-20",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306335413/invoice",
+            "order_id": "1306335413",
+            "status": "Your order has been completed",
+            "total": 163.66,
+            "total_cents": 16366,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306335413/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-12-12",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306305332/invoice",
+            "order_id": "1306305332",
+            "status": "Your order has been completed",
+            "total": 92.73,
+            "total_cents": 9273,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306305332/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-12-06",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306282165/invoice",
+            "order_id": "1306282165",
+            "status": "Your order has been completed",
+            "total": 96.68,
+            "total_cents": 9668,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306282165/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-11-30",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306258149/invoice",
+            "order_id": "1306258149",
+            "status": "Your order has been completed",
+            "total": 118.87,
+            "total_cents": 11887,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306258149/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-11-23",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306231591/invoice",
+            "order_id": "1306231591",
+            "status": "Your order has been completed",
+            "total": 144.36,
+            "total_cents": 14436,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306231591/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-11-14",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306195073/invoice",
+            "order_id": "1306195073",
+            "status": "Your order has been completed",
+            "total": 153.22,
+            "total_cents": 15322,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306195073/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-11-10",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306181899/invoice",
+            "order_id": "1306181899",
+            "status": "Your order has been completed",
+            "total": 91.12,
+            "total_cents": 9112,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306181899/view"
+        },
+        {
+            "currency": "EUR",
+            "date": "2025-11-04",
+            "invoice_url": "https://www.rimi.ee/epood/en/my-profile/order/1306161090/invoice",
+            "order_id": "1306161090",
+            "status": "Your order has been completed",
+            "total": 144.91,
+            "total_cents": 14491,
+            "valid": true,
+            "view_url": "https://www.rimi.ee/epood/en/my-profile/order/1306161090/view"
+        }
+    ],
+    "pagination": {
+        "complete_history": false,
+        "pages_fetched": [
+            1
+        ],
+        "total_pages": 3
+    },
+    "summary": {
+        "average_spend_per_valid_order": 133.31,
+        "average_spend_per_valid_order_text": "133.31",
+        "currency": "EUR",
+        "order_count": 20,
+        "total_spend": 2666.19,
+        "total_spend_cents": 266619,
+        "valid_order_count": 20
+    }
+}

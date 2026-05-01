@@ -1,0 +1,69 @@
+version: 1
+command:
+  id: orders_history
+  cli_path:
+  - orders
+  - history
+  summary: List past orders
+  complete: true
+  description: Return past Rimi orders from the account order history.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/my-profile/order
+    path_template: /epood/en/my-profile/order
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: my-profile
+    - kind: literal
+      value: order
+    params: {}
+    query: {}
+    headers:
+      user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      upgrade-insecure-requests: '1'
+      referer: https://www.rimi.ee/epood/en/my-profile/profile-information
+      accept-encoding: gzip, deflate, br, zstd
+      accept-language: en-US,en;q=0.9
+      priority: u=0, i
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        currentPage:
+          type: integer
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        user-agent:
+          type: string
+        accept:
+          type: string
+        upgrade-insecure-requests:
+          type: string
+        referer:
+          type: string
+        accept-encoding:
+          type: string
+        accept-language:
+          type: string
+        priority:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: orders_history_001
+    path: fixtures/orders_history_001
+  goldens:
+  - id: orders_history_001
+    path: goldens/orders_history_001.json
