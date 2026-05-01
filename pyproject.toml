@@ -77,6 +77,7 @@ commands = [
 
 [tool.autocli]
 schema_version = 1
+executable_name = "rimi"
 site_slug = "www-rimi-ee"
 site_module = "www_rimi_ee"
 primary_hosts = ["www.rimi.ee"]
