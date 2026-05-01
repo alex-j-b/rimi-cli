@@ -40,11 +40,13 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 
 Authenticated commands need fresh browser-session headers stored in the system keyring.
 
-- If headers are missing or stale, use Playwright to open `https://www.rimi.ee/` and ask the user to sign in when needed.
+- Run `rimi account whoami` to check if the account is signed in.
+- If the account is not signed in, or if headers are missing/stale, use Playwright to open `https://www.rimi.ee/epood` and ask the user to sign in when needed.
 - Wait for a representative authenticated Rimi request, then call `await request.allHeaders()` in Playwright.
 - Write `JSON.stringify({ headers })` to a temporary browser local-storage key such as `autocli.playwrightHeadersJson`.
 - Persist the browser context to the workspace-local `.autocli-playwright-storage-state.json` path.
 - Read that storage-state file locally, extract the temporary local-storage value, and pass it to `rimi auth store-headers` through stdin or `--file`.
+- Test that the account is signed in by running `rimi account whoami` again. It should return `signed_in: true`.
 - Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIGHT_HEADERS_JSON` values in the conversation or logs.
 - Do not commit `.autocli-playwright-storage-state.json` or any captured private session values.
 - Keep session-sensitive values in the system keyring; do not copy them into fixtures, goldens, `command.yaml`, README examples, or tests.
