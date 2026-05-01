@@ -227,14 +227,5 @@
             1
         ],
         "total_pages": 3
-    },
-    "summary": {
-        "average_spend_per_valid_order": 133.31,
-        "average_spend_per_valid_order_text": "133.31",
-        "currency": "EUR",
-        "order_count": 20,
-        "total_spend": 2666.19,
-        "total_spend_cents": 266619,
-        "valid_order_count": 20
     }
 }

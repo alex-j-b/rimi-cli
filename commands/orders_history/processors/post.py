@@ -51,10 +51,6 @@ def _money_from_cents(cents: int | None) -> float | None:
     return float((Decimal(cents) / Decimal(100)).quantize(Decimal('0.01')))
 
 
-def _money_text_from_cents(cents: int) -> str:
-    return str((Decimal(cents) / Decimal(100)).quantize(Decimal('0.01')))
-
-
 class OrderHistoryParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -140,25 +136,6 @@ def _parse_page(html: str) -> tuple[list[dict[str, Any]], int | None]:
     return parser.orders, total_pages
 
 
-def _summarize(orders: list[dict[str, Any]]) -> dict[str, Any]:
-    valid_orders = [order for order in orders if order.get('valid')]
-    total_cents = sum(int(order['total_cents']) for order in valid_orders)
-    average_cents = (
-        int((Decimal(total_cents) / Decimal(len(valid_orders))).quantize(Decimal('1'), rounding=ROUND_HALF_UP))
-        if valid_orders
-        else 0
-    )
-    return {
-        'order_count': len(orders),
-        'valid_order_count': len(valid_orders),
-        'total_spend': _money_from_cents(total_cents),
-        'total_spend_cents': total_cents,
-        'average_spend_per_valid_order': _money_from_cents(average_cents) if valid_orders else None,
-        'average_spend_per_valid_order_text': _money_text_from_cents(average_cents) if valid_orders else None,
-        'currency': 'EUR',
-    }
-
-
 def _fetch_page(context: dict[str, Any], page: int) -> str:
     request = context['request']
     query = dict(request.get('query') or {})
@@ -203,7 +180,6 @@ def run(context: dict[str, object]) -> dict[str, object]:
 
     context['output'] = {
         'orders': orders,
-        'summary': _summarize(orders),
         'pagination': {
             'total_pages': total_pages,
             'pages_fetched': sorted(pages_fetched),
