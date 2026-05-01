@@ -19,6 +19,7 @@ from collections import defaultdict
 from pathlib import Path, PurePosixPath
 from typing import Any, Literal
 
+import click
 import httpx
 import keyring
 import msgpack
@@ -555,11 +556,81 @@ def load_workspace_settings(workspace_root: Path) -> dict[str, object]:
     return settings
 
 
+class RecursiveHelpTyperGroup(typer.core.TyperGroup):
+    """Show all descendant leaf commands in group help output."""
+
+    def format_help(self, ctx: click.Context, formatter: click.HelpFormatter) -> None:
+        if not typer.core.HAS_RICH or self.rich_markup_mode is None:
+            return super().format_help(ctx, formatter)
+
+        from typer import rich_utils
+
+        recursive_commands = {
+            command_path: self._copy_command_for_help(command_path, command)
+            for command_path, command in self._iter_leaf_commands(self, ctx, ())
+        }
+
+        help_group = copy.copy(self)
+        help_group.list_commands = lambda _ctx: list(recursive_commands)
+        help_group.get_command = lambda _ctx, name: recursive_commands.get(name)
+        return rich_utils.rich_format_help(
+            obj=help_group,
+            ctx=ctx,
+            markup_mode=self.rich_markup_mode,
+        )
+
+    def format_commands(self, ctx: click.Context, formatter: click.HelpFormatter) -> None:
+        commands = list(self._iter_leaf_commands(self, ctx, ()))
+        if not commands:
+            return
+
+        limit = formatter.width - 6 - max(len(command_path) for command_path, _command in commands)
+        rows = [(command_path, command.get_short_help_str(limit)) for command_path, command in commands]
+        if rows:
+            with formatter.section('Commands'):
+                formatter.write_dl(rows)
+
+    @classmethod
+    def _iter_leaf_commands(
+        cls,
+        group: click.Group,
+        ctx: click.Context,
+        prefix: tuple[str, ...],
+    ) -> list[tuple[str, click.Command]]:
+        commands: list[tuple[str, click.Command]] = []
+        for subcommand in group.list_commands(ctx):
+            command = group.get_command(ctx, subcommand)
+            if command is None or command.hidden:
+                continue
+
+            command_path = (*prefix, subcommand)
+            if isinstance(command, click.Group):
+                sub_ctx = click.Context(command, info_name=subcommand, parent=ctx)
+                child_commands = cls._iter_leaf_commands(command, sub_ctx, command_path)
+                if child_commands:
+                    commands.extend(child_commands)
+                    continue
+
+            commands.append((' '.join(command_path), command))
+        return commands
+
+    @staticmethod
+    def _copy_command_for_help(command_path: str, command: click.Command) -> click.Command:
+        return click.Command(
+            name=command_path,
+            help=command.help,
+            short_help=command.short_help,
+            deprecated=command.deprecated,
+            hidden=command.hidden,
+        )
+
+
 def build_app(workspace_root: Path) -> typer.Typer:
     """Build the Rimi e-store CLI app."""
 
     app = typer.Typer(
         add_completion=False,
+        cls=RecursiveHelpTyperGroup,
         help='Browse and manage Rimi e-store data from the command line.',
         no_args_is_help=True,
     )
@@ -584,7 +655,12 @@ def build_app(workspace_root: Path) -> typer.Typer:
 def register_auth_commands(app: typer.Typer) -> None:
     """Register local auth-management commands."""
 
-    auth_app = typer.Typer(add_completion=False, no_args_is_help=True, help='Manage local authentication headers.')
+    auth_app = typer.Typer(
+        add_completion=False,
+        cls=RecursiveHelpTyperGroup,
+        no_args_is_help=True,
+        help='Manage local authentication headers.',
+    )
 
     @auth_app.command('store-headers')
     def store_headers(
@@ -759,7 +835,7 @@ def get_or_create_group(groups: dict[tuple[str, ...], typer.Typer], path: list[s
     if key in groups:
         return groups[key]
     parent = get_or_create_group(groups, path[:-1])
-    sub_app = typer.Typer(add_completion=False, no_args_is_help=True)
+    sub_app = typer.Typer(add_completion=False, cls=RecursiveHelpTyperGroup, no_args_is_help=True)
     parent.add_typer(sub_app, name=path[-1])
     groups[key] = sub_app
     return sub_app
