@@ -242,6 +242,12 @@ def _availability(value: object) -> str | None:
     return value.rsplit('/', 1)[-1].replace('InStock', 'in_stock').replace('OutOfStock', 'out_of_stock')
 
 
+def _english_product_url(value: object) -> str | None:
+    if not isinstance(value, str) or not value:
+        return None
+    return value.replace('/epood/products/', '/epood/en/products/', 1)
+
+
 def _extract_details_html(page_html: str) -> str | None:
     match = re.search(r"identifier:\s*'details'.*?html:\s*\"((?:\\.|[^\"\\])*)\"", page_html, re.S)
     if not match:
@@ -313,7 +319,7 @@ def run(context: dict[str, object]) -> dict[str, object]:
         'unit_price': parser.unit_price,
         'nutrition': _parse_nutrition(body),
         'availability': _availability(offer.get('availability')),
-        'url': offer.get('url'),
+        'url': _english_product_url(offer.get('url')),
         'image_url': image_url,
         'categories': parser.categories,
         'favorite': parser.favorite,
