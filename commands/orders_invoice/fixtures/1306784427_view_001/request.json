@@ -1,0 +1,17 @@
+{
+  "method": "GET",
+  "url": "https://www.rimi.ee/epood/en/my-profile/order/1306784427/view?timezone=Europe%2FTallinn",
+  "path": "/epood/en/my-profile/order/1306784427/view",
+  "query": {
+    "timezone": "Europe/Tallinn"
+  },
+  "headers": {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "accept": "text/html, */*; q=0.01",
+    "uzlc": "7f9000348f8ba0-a6c0-4176-83b5-93411e74018c13-17732326007694518169829-0004ddee0368665d44f85310050808385Ce3w76348f8ba0",
+    "referer": "https://www.rimi.ee/epood/en/my-profile/order",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "priority": "u=1, i"
+  }
+}

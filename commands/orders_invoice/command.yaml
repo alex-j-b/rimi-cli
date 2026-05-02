@@ -1,0 +1,80 @@
+version: 1
+command:
+  id: orders_invoice
+  cli_path:
+  - orders
+  - invoice
+  summary: Show order invoice details
+  complete: true
+  description: Return order totals, timing details, and purchased products for a Rimi order.
+  arguments:
+  - name: order-id
+    python_name: order_id
+    kind: argument
+    type: string
+    required: true
+    help: Rimi order number to inspect.
+  request:
+    method: GET
+    url_template: https://www.rimi.ee/epood/en/my-profile/order/{order_id}/view
+    path_template: /epood/en/my-profile/order/{order_id}/view
+    path_shape:
+    - kind: literal
+      value: epood
+    - kind: literal
+      value: en
+    - kind: literal
+      value: my-profile
+    - kind: literal
+      value: order
+    - kind: parameter
+      value: order_id
+    - kind: literal
+      value: view
+    params: {}
+    query: {}
+    headers:
+      user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+      accept: text/html, */*; q=0.01
+      referer: https://www.rimi.ee/epood/en/my-profile/order
+      accept-encoding: gzip, deflate, br, zstd
+      accept-language: en-GB,en-US;q=0.9,en;q=0.8
+      priority: u=1, i
+    cookies: {}
+    body: null
+    query_schema:
+      type: object
+      properties:
+        timezone:
+          type: string
+      additionalProperties: false
+    headers_schema:
+      type: object
+      properties:
+        user-agent:
+          type: string
+        accept:
+          type: string
+        referer:
+          type: string
+        accept-encoding:
+          type: string
+        accept-language:
+          type: string
+        priority:
+          type: string
+      additionalProperties: false
+    body_schema: null
+  processors:
+    pre: processors.pre
+    post: processors.post
+  fixtures:
+  - id: 1306784427_view_001
+    path: fixtures/1306784427_view_001
+  goldens:
+  - id: 1306784427_view_001
+    path: goldens/1306784427_view_001.json
+  request_mapping:
+    request.params.order_id: args.order_id
+    request.query.timezone: Europe/Tallinn
