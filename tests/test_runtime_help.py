@@ -28,3 +28,10 @@ def test_nested_help_lists_descendant_commands_relative_to_group() -> None:
     assert 'list' in result.output
     assert 'cart show' not in result.output
     assert 'products list' not in result.output
+
+
+def test_command_help_hides_replay_flag() -> None:
+    result = CliRunner().invoke(build_app(WORKSPACE_ROOT), ['products', 'categories', '--help'])
+
+    assert result.exit_code == 0
+    assert '--replay' not in result.output
