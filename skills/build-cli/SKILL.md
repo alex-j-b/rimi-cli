@@ -6,13 +6,7 @@ Use this skill when shaping a generated `autocli` workspace into a user-approved
 
 - Initialize git for the workspace if it is not already initialized.
 - Make an initial commit before changing generated files when there is no existing history.
-- Ensure the system keyring contains Playwright headers JSON that can access the target site. To capture fresh live-session headers without printing them in the conversation:
-  - In Playwright, wait for a representative authenticated request and call `await request.allHeaders()`.
-  - Write `JSON.stringify({ headers })` to a temporary local storage key such as `autocli.playwrightHeadersJson`.
-  - Persist the browser context to the generated workspace's absolute `.autocli-playwright-storage-state.json` path, for example `await page.context().storageState({ path: "/absolute/path/to/generated-workspace/.autocli-playwright-storage-state.json" })`.
-  - Read the saved storage-state file locally, extract the temporary local storage value, and pass it to `rimi auth store-headers` through stdin or `--file`.
-  - After the storage state has been written, remove the temporary local storage key with `localStorage.removeItem("autocli.playwrightHeadersJson")`.
-- If headers are missing or stale, use Playwright to visit the site and ask the user to log in when needed.
+- If authenticated commands are needed, complete the instructions in `skills/authenticate/SKILL.md`. That skill covers both first-run human-assisted auth-flow creation and later autonomous authentication from local references.
 - Non-mutating requests may be used for discovery when they are useful for understanding the API or output shape.
 - Ask for explicit permission before calling mutating endpoints.
 - When endpoint safety is ambiguous, treat it as mutable and ask first.

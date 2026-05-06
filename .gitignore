@@ -1,5 +1,5 @@
-.rimi-storage-state.json
-.autocli-playwright-storage-state.json
+skills/authenticate/references/*
+!skills/authenticate/references/.gitkeep
 
 __pycache__/
 *.py[cod]

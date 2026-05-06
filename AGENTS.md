@@ -16,6 +16,8 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 - `www_rimi_ee/runtime.py`: workspace-local CLI runtime.
 - `www_rimi_ee/testing.py`: workspace-local contract test helpers.
 - `skills/build-cli/SKILL.md`: iterative workflow for developing this CLI with user feedback.
+- `skills/authenticate/SKILL.md`: committed generic authentication workflow. Load it when authenticated commands need a fresh session.
+- `skills/authenticate/references/`: git-ignored local authentication notes such as account choices, password-manager routes, and MFA retrieval steps.
 
 ## Governing Principles
 
@@ -31,6 +33,7 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 ## Working With This Workspace
 
 - Use `skills/build-cli/SKILL.md` when the task is to improve, finish, or review the generated CLI.
+- Use `skills/authenticate/SKILL.md` when `rimi account whoami` is not signed in, headers are stale, or a fresh browser-authenticated session must be captured.
 - Use `processors/pre.py` only for request-shaping behavior needed by live execution.
 - Use `processors/post.py` for the command's JSON output contract.
 - Update goldens only when the output contract is intentionally changed.
@@ -38,18 +41,9 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 
 ## Updating Live Session Headers
 
-Authenticated commands need fresh browser-session headers stored in the system keyring.
+Authenticated commands need fresh browser-session headers stored in the system keyring. Load and follow `skills/authenticate/SKILL.md` first. Store user-specific auth-flow notes under `skills/authenticate/references/`, not in the committed generic skill.
 
-- Run `rimi account whoami` to check if the account is signed in.
-- If the account is not signed in, or if headers are missing/stale, use Playwright to open `https://www.rimi.ee/epood` and ask the user to sign in when needed.
-- Wait for a representative authenticated Rimi request, then call `await request.allHeaders()` in Playwright.
-- Write `JSON.stringify({ headers })` to a temporary browser local-storage key such as `autocli.playwrightHeadersJson`.
-- Persist the browser context to the workspace-local `.autocli-playwright-storage-state.json` path.
-- Read that storage-state file locally, extract the temporary local-storage value, and pass it to `rimi auth store-headers` through stdin or `--file`.
-- Test that the account is signed in by running `rimi account whoami` again. It should return `signed_in: true`.
-- Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIGHT_HEADERS_JSON` values in the conversation or logs.
-- Do not commit `.autocli-playwright-storage-state.json` or any captured private session values.
-- Keep session-sensitive values in the system keyring; do not copy them into fixtures, goldens, `command.yaml`, README examples, or tests.
+Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIGHT_HEADERS_JSON` values in the conversation or logs. Do not commit `skills/authenticate/references/*` or any captured private session values.
 
 ## Common Failure Modes
 
@@ -64,5 +58,6 @@ Authenticated commands need fresh browser-session headers stored in the system k
 - Install CLI tool: `uv tool install --editable .`
 - CLI help: `rimi --help` or `python -m www_rimi_ee --help`
 - Command help: `rimi <command path> --help`
+- Auth instructions: `rimi auth instructions`
 - Contract tests: `uv run --extra dev python -m pytest -q commands/<command_id>/tests/test_command.py`
 - Live authenticated runs can use the `PLAYWRIGHT_HEADERS_JSON` process environment override
