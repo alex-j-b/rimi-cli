@@ -16,7 +16,7 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 - `www_rimi_ee/runtime.py`: workspace-local CLI runtime.
 - `www_rimi_ee/testing.py`: workspace-local contract test helpers.
 - `skills/build-cli/SKILL.md`: iterative workflow for developing this CLI with user feedback.
-- `skills/authenticate/SKILL.md`: committed generic authentication workflow. Load it when authenticated commands need a fresh session.
+- `skills/authenticate/SKILL.md`: committed generic authentication workflow. Load it when authenticated commands need a newly captured browser session.
 - `skills/authenticate/references/`: git-ignored local authentication notes such as account choices, password-manager routes, and MFA retrieval steps.
 
 ## Governing Principles
@@ -33,7 +33,7 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 ## Working With This Workspace
 
 - Use `skills/build-cli/SKILL.md` when the task is to improve, finish, or review the generated CLI.
-- Use `skills/authenticate/SKILL.md` when `rimi account whoami` is not signed in, headers are stale, or a fresh browser-authenticated session must be captured.
+- Run `rimi auth refresh` first when `rimi account whoami` is not signed in or stored headers look stale. Use `skills/authenticate/SKILL.md` when refresh reaches SSO, fails, or a fresh browser-authenticated session must be captured.
 - Use `processors/pre.py` only for request-shaping behavior needed by live execution.
 - Use `processors/post.py` for the command's JSON output contract.
 - Update goldens only when the output contract is intentionally changed.
@@ -41,7 +41,7 @@ This is a generated `autocli` workspace. The parent `autocli` project generated 
 
 ## Updating Live Session Headers
 
-Authenticated commands need fresh browser-session headers stored in the system keyring. Load and follow `skills/authenticate/SKILL.md` first. Store user-specific auth-flow notes under `skills/authenticate/references/`, not in the committed generic skill.
+Authenticated commands need fresh browser-session headers stored in the system keyring. Run `rimi auth refresh` first when stored cookies appear stale. Load and follow `skills/authenticate/SKILL.md` when refresh cannot renew the session and browser headers must be recaptured. Store user-specific auth-flow notes under `skills/authenticate/references/`, not in the committed generic skill.
 
 Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIGHT_HEADERS_JSON` values in the conversation or logs. Do not commit `skills/authenticate/references/*` or any captured private session values.
 
@@ -58,6 +58,7 @@ Do not print cookies, authorization headers, CSRF/XSRF tokens, or full `PLAYWRIG
 - Install CLI tool: `uv tool install --editable .`
 - CLI help: `rimi --help` or `python -m www_rimi_ee --help`
 - Command help: `rimi <command path> --help`
-- Auth instructions: `rimi auth instructions`
+- Refresh stored auth cookies: `rimi auth refresh`
+- Auth recapture instructions: `rimi auth instructions`
 - Contract tests: `uv run --extra dev python -m pytest -q commands/<command_id>/tests/test_command.py`
 - Live authenticated runs can use the `PLAYWRIGHT_HEADERS_JSON` process environment override

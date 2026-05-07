@@ -41,6 +41,20 @@ Authenticated commands use a secure local session on your computer. For the oper
 
 AI coding agents working with the CLI can capture and persist authenticated browser sessions securely on the local machine without exposing credentials in chat.
 
+Store captured browser headers once:
+
+```bash
+rimi auth store-headers --file headers.json
+```
+
+When Rimi still recognizes your browser session but stored CLI cookies have gone stale, refresh the local keyring copy:
+
+```bash
+rimi auth refresh
+```
+
+`rimi auth refresh` visits the Rimi account login endpoint with the stored browser-session headers, follows the same silent session refresh the storefront uses, stores the updated cookies back in the system keyring, and verifies the account with `account whoami`. If it reaches the external SSO login page, open Rimi in a browser and recapture authenticated headers with `rimi auth instructions`.
+
 ## Usage
 
 Inspect the command tree:

@@ -1,6 +1,6 @@
 # Authenticate Skill
 
-Use this skill whenever authenticated commands need a fresh session or live-session headers.
+Use this skill whenever authenticated commands need newly captured live-session headers. If stored cookies merely appear stale, run `rimi auth refresh` first.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ This committed skill defines the generic authentication workflow for this CLI. U
 
 ## Playwright Header Capture Recipe
 
-Ensure the system keyring contains Playwright headers JSON that can access the target site. To capture fresh live-session headers without printing them in the conversation:
+Ensure the system keyring contains Playwright headers JSON that can access the target site. If the keyring already has headers and the browser session may still be recognized, try `rimi auth refresh` before recapturing. To capture fresh live-session headers without printing them in the conversation:
 
 1. In Playwright, wait for a representative authenticated request and call `await request.allHeaders()`.
 2. Write `JSON.stringify({ headers })` to a temporary local storage key such as `autocli.playwrightHeadersJson`.

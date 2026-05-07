@@ -33,6 +33,9 @@ PLAYWRIGHT_HEADERS_JSON_ENV = 'PLAYWRIGHT_HEADERS_JSON'
 KEYRING_SERVICE = 'rimi'
 KEYRING_ACCOUNT = 'playwright-headers-json'
 TEST_MODE_ENV = 'AUTOCLI_TEST_MODE'
+RIMI_BASE_URL = 'https://www.rimi.ee'
+RIMI_LOGIN_URL = f'{RIMI_BASE_URL}/epood/account/login'
+RIMI_WHOAMI_URL = f'{RIMI_BASE_URL}/epood/api/v1/users/current/greeting'
 STORE_HEADERS_FILE_OPTION = typer.Option(
     None,
     '--file',
@@ -667,6 +670,17 @@ def register_auth_commands(app: typer.Typer, workspace_root: Path) -> None:
             f'({stored_header_count} runtime header override(s)).'
         )
 
+    @auth_app.command('refresh')
+    def refresh() -> None:
+        """Refresh stored Rimi session cookies through the account login endpoint."""
+
+        try:
+            result = refresh_stored_session_headers()
+        except Exception as exc:
+            typer.echo(summarize_exception(exc), err=True)
+            raise typer.Exit(code=1) from exc
+        typer.echo(render_json_output(result))
+
     @auth_app.command('instructions')
     def instructions() -> None:
         """Print the committed authentication workflow instructions."""
@@ -1300,6 +1314,150 @@ def load_live_header_overrides(*, required: bool = False) -> dict[str, str]:
             )
         return {}
     return parse_playwright_header_overrides(raw)
+
+
+def refresh_stored_session_headers() -> dict[str, JsonValue]:
+    """Refresh stored Rimi cookies by visiting the account login endpoint."""
+
+    raw = os.environ.get(PLAYWRIGHT_HEADERS_JSON_ENV) or load_playwright_headers_json_from_keyring()
+    if not raw:
+        raise ValueError(
+            f'{PLAYWRIGHT_HEADERS_JSON_ENV} or system keyring item '
+            f'{KEYRING_SERVICE}/{KEYRING_ACCOUNT} is required before auth refresh'
+        )
+
+    payload = parse_playwright_headers_payload(raw, source='stored Playwright headers JSON')
+    stored_headers = payload.get('headers')
+    if not isinstance(stored_headers, dict):
+        raise ValueError('stored Playwright headers JSON must contain a headers object')
+
+    overrides = extract_playwright_header_overrides(payload, source='stored Playwright headers JSON')
+    request_headers = build_browser_navigation_headers(overrides)
+    with httpx.Client(follow_redirects=True, timeout=30) as client:
+        login_response = client.get(RIMI_LOGIN_URL, headers=request_headers)
+        if login_response.status_code >= 400:
+            raise ValueError(f'Rimi auth refresh failed with HTTP {login_response.status_code}')
+        if login_response.url.host != 'www.rimi.ee':
+            raise ValueError(
+                'Rimi auth refresh reached the external SSO login page. Open Rimi in a browser and recapture '
+                'authenticated headers with `rimi auth instructions`.'
+            )
+
+        refreshed_cookie = merge_cookie_header(overrides.get('cookie'), client.cookies)
+        if refreshed_cookie:
+            stored_headers['cookie'] = refreshed_cookie
+            xsrf_token = cookie_value(refreshed_cookie, 'XSRF-TOKEN')
+            if xsrf_token and any(str(name).lower() == 'x-xsrf-token' for name in stored_headers):
+                stored_headers['x-xsrf-token'] = urllib.parse.unquote(xsrf_token)
+
+        verification = verify_refreshed_session(client, stored_headers)
+
+    compact_payload = json.dumps(payload, separators=(',', ':'), ensure_ascii=False)
+    header_count = len(extract_playwright_header_overrides(payload, source='refreshed Playwright headers JSON'))
+    store_playwright_headers_json_in_keyring(compact_payload)
+    return {
+        'refreshed': True,
+        'stored_header_count': header_count,
+        'signed_in': verification['signed_in'],
+        'user_name': verification['user_name'],
+    }
+
+
+def build_browser_navigation_headers(overrides: dict[str, str]) -> dict[str, str]:
+    """Build browser-like headers for a top-level Rimi navigation."""
+
+    headers = {
+        'user-agent': (
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+            '(KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
+        ),
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'upgrade-insecure-requests': '1',
+        'referer': f'{RIMI_BASE_URL}/epood/en',
+    }
+    for name, value in overrides.items():
+        if is_legal_request_header_name(name):
+            headers[name] = value
+    headers['accept'] = (
+        'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8'
+    )
+    headers['referer'] = f'{RIMI_BASE_URL}/epood/en'
+    headers['sec-fetch-mode'] = 'navigate'
+    headers['sec-fetch-site'] = 'same-origin'
+    return headers
+
+
+def is_legal_request_header_name(name: str) -> bool:
+    """Return whether a captured header name can be sent through HTTPX."""
+
+    normalized = name.strip().lower()
+    return bool(normalized) and not normalized.startswith(':')
+
+
+def verify_refreshed_session(client: httpx.Client, stored_headers: dict[str, Any]) -> dict[str, JsonValue]:
+    """Check whether refreshed cookies still identify a signed-in account."""
+
+    headers = {
+        'accept': '*/*',
+        'referer': f'{RIMI_BASE_URL}/epood/en/my-profile/favourites',
+        'user-agent': str(stored_headers.get('user-agent') or 'Mozilla/5.0 (compatible; rimi-cli/0.1)'),
+    }
+    for name, value in stored_headers.items():
+        header_name = str(name).lower()
+        if header_name == 'cookie':
+            continue
+        if (
+            is_legal_request_header_name(header_name)
+            and is_session_sensitive_header(header_name)
+            and isinstance(value, str)
+        ):
+            headers[header_name] = value
+
+    response = client.get(RIMI_WHOAMI_URL, params={'locale': 'ee-en'}, headers=headers)
+    if response.status_code >= 400:
+        return {'signed_in': False, 'user_name': None}
+    try:
+        payload = response.json()
+    except json.JSONDecodeError:
+        return {'signed_in': False, 'user_name': None}
+    if not isinstance(payload, dict):
+        return {'signed_in': False, 'user_name': None}
+    user_name = payload.get('userName')
+    return {
+        'signed_in': isinstance(user_name, str) and bool(user_name),
+        'user_name': user_name if isinstance(user_name, str) else None,
+    }
+
+
+def merge_cookie_header(existing_cookie_header: str | None, cookies: httpx.Cookies) -> str:
+    """Merge an existing Cookie header with cookies collected by an HTTPX client."""
+
+    merged = parse_cookie_header(existing_cookie_header)
+    for cookie in cookies.jar:
+        merged[cookie.name] = cookie.value
+    return '; '.join(f'{name}={value}' for name, value in merged.items())
+
+
+def parse_cookie_header(cookie_header: str | None) -> dict[str, str]:
+    """Parse a Cookie request header while preserving cookie order."""
+
+    parsed: dict[str, str] = {}
+    if not cookie_header:
+        return parsed
+    for part in cookie_header.split(';'):
+        if '=' not in part:
+            continue
+        name, value = part.split('=', 1)
+        name = name.strip()
+        if name:
+            parsed[name] = value.strip()
+    return parsed
+
+
+def cookie_value(cookie_header: str, name: str) -> str | None:
+    """Return one cookie value from a request Cookie header."""
+
+    return parse_cookie_header(cookie_header).get(name)
 
 
 def store_playwright_headers_json(raw: str) -> int:

@@ -17,6 +17,7 @@ def test_root_help_lists_descendant_commands() -> None:
     assert 'cart show' in result.output
     assert 'checkout time-slots' in result.output
     assert 'auth store-headers' in result.output
+    assert 'auth refresh' in result.output
 
 
 def test_nested_help_lists_descendant_commands_relative_to_group() -> None:
